@@ -6,7 +6,6 @@ on:
     paths-ignore:
       - 'cv-en.pdf'
       - 'cv-es.pdf'
-      - '.github/**'
   workflow_dispatch:
 
 permissions:
