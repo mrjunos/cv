@@ -11,6 +11,12 @@ const path = require('path');
   for (const lang of ['en', 'es']) {
     await page.goto(fileUrl, { waitUntil: 'networkidle0' });
     await page.evaluate((l) => setLang(l), lang);
+    await page.addStyleTag({
+      content: '.reveal{opacity:1!important;transform:none!important;transition:none!important}',
+    });
+    await page.evaluate(() => {
+      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in'));
+    });
     await page.evaluateHandle('document.fonts.ready');
     await new Promise((r) => setTimeout(r, 600));
     await page.emulateMediaType('screen');
