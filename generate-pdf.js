@@ -6,14 +6,19 @@ const path = require('path');
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   });
   const page = await browser.newPage();
+  await page.setViewport({ width: 1280, height: 1800, deviceScaleFactor: 1 });
   const fileUrl = 'file://' + path.resolve(__dirname, 'index.html');
+
+  const pdfStyleOverrides = `
+    .reveal{opacity:1!important;transform:none!important;transition:none!important}
+    .topbar,.footer,.portrait-cap{display:none!important}
+    body{padding-bottom:0!important}
+  `;
 
   for (const lang of ['en', 'es']) {
     await page.goto(fileUrl, { waitUntil: 'networkidle0' });
     await page.evaluate((l) => setLang(l), lang);
-    await page.addStyleTag({
-      content: '.reveal{opacity:1!important;transform:none!important;transition:none!important}',
-    });
+    await page.addStyleTag({ content: pdfStyleOverrides });
     await page.evaluate(() => {
       document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in'));
     });
@@ -24,7 +29,7 @@ const path = require('path');
       path: `cv-${lang}.pdf`,
       format: 'A4',
       printBackground: true,
-      margin: { top: '14mm', bottom: '14mm', left: '12mm', right: '12mm' },
+      margin: { top: '8mm', bottom: '8mm', left: '8mm', right: '8mm' },
       preferCSSPageSize: false,
     });
     console.log(`Generated cv-${lang}.pdf`);
