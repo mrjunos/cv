@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Juan José Cano Duque — Curriculum Vitae</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper: #f4ede0;
+    --paper-2: #ebe2d1;
+    --ink: #1a1714;
+    --ink-soft: #4a443c;
+    --ink-muted: #8a7f70;
+    --rule: #d6cab2;
+    --accent: oklch(0.62 0.10 235); /* glacier blue */
+    --accent-soft: oklch(0.92 0.04 235);
+    --max: 1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--paper);color:var(--ink);font-family:'Inter Tight',system-ui,sans-serif;font-weight:400;letter-spacing:-0.005em;-webkit-font-smoothing:antialiased}
+  body{min-height:100vh;padding:0 0 140px;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+
+  /* ============== TOP BAR ============== */
+  .topbar{
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    background:rgba(244,237,224,.78);
+    border-bottom:1px solid var(--rule);
+  }
+  .topbar-inner{
+    max-width:var(--max);margin:0 auto;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 32px;
+    font-size:13px;
+  }
+  .mono{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-muted)}
+  .topbar nav{display:flex;gap:28px}
+  .topbar nav a{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-soft);position:relative;padding:4px 0}
+  .topbar nav a:hover{color:var(--ink)}
+  .topbar nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+  .topbar nav a:hover::after{transform:scaleX(1)}
+
+  /* ============== HERO ============== */
+  .hero{
+    max-width:var(--max);margin:0 auto;
+    padding:70px 32px 40px;
+    display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:auto 1fr;gap:60px;align-items:end;
+    position:relative;
+  }
+  .hero-main{grid-column:1;grid-row:2}
+  .hero-side{grid-column:2;grid-row:1 / span 2;align-self:end}
+  .hero > .eyebrow{grid-column:1 / -1;grid-row:1}
+  .eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:32px;grid-column:1 / -1}
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px color-mix(in oklab, var(--accent) 18%, transparent)}
+  .name{
+    font-family:'Instrument Serif',serif;
+    font-weight:400;
+    font-size:clamp(56px, 9vw, 124px);
+    line-height:0.9;
+    letter-spacing:-0.025em;
+    color:var(--ink);
+  }
+  .name em{font-style:italic;color:var(--accent)}
+  .role{
+    margin-top:28px;
+    font-size:15px;line-height:1.55;color:var(--ink-soft);
+    max-width:48ch;
+  }
+  .role strong{color:var(--ink);font-weight:500}
+
+  .hero-side{
+    display:flex;flex-direction:column;align-items:flex-end;gap:24px;
+    position:relative;
+  }
+  .portrait{
+    width:100%;max-width:340px;aspect-ratio:4/5;
+    background:url('assets/portrait.jpeg') center 25%/cover no-repeat;
+    filter:grayscale(0.15) contrast(1.02);
+    border-radius:2px;
+    position:relative;
+  }
+  .portrait::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, transparent 50%, rgba(26,23,20,0.55));
+    border-radius:2px;
+    pointer-events:none;
+  }
+  .portrait-cap{
+    position:absolute;right:12px;bottom:10px;left:12px;
+    z-index:2;
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;
+    color:rgba(255,255,255,0.92);
+    text-shadow:0 1px 2px rgba(0,0,0,0.4);
+    text-align:right;
+  }
+
+  /* ============== SUMMARY STRIP ============== */
+  .strip{
+    max-width:var(--max);margin:0 auto;
+    padding:50px 32px 80px;
+    border-top:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+    display:grid;grid-template-columns:repeat(4,1fr);gap:48px;
+    margin-top:60px;
+  }
+  .stat .num{
+    font-family:'Instrument Serif',serif;
+    font-size:64px;line-height:1;letter-spacing:-0.03em;
+    color:var(--ink);
+    display:flex;align-items:baseline;
+  }
+  .stat .num small{font-size:24px;margin-left:4px;color:var(--ink-muted)}
+  .stat .lbl{
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--ink-muted);margin-top:14px;line-height:1.5;
+  }
+
+  /* ============== SECTION ============== */
+  section{max-width:var(--max);margin:0 auto;padding:90px 32px}
+  .section-head{
+    display:grid;grid-template-columns:200px 1fr;gap:60px;
+    margin-bottom:60px;align-items:start;
+  }
+  .section-head .label{
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-muted);
+    padding-top:14px;
+  }
+  .section-head h2{
+    font-family:'Instrument Serif',serif;font-weight:400;
+    font-size:clamp(40px,5.5vw,72px);line-height:1;letter-spacing:-0.02em;
+  }
+  .section-head h2 em{font-style:italic;color:var(--accent)}
+
+  /* ============== EXPERIENCE TIMELINE ============== */
+  .xp-list{display:flex;flex-direction:column}
+  .xp{
+    display:grid;grid-template-columns:200px 1fr;gap:60px;
+    padding:36px 0;
+    border-top:1px solid var(--rule);
+    transition:background .3s ease;
+  }
+  .xp:last-child{border-bottom:1px solid var(--rule)}
+  .xp:hover{background:linear-gradient(90deg, transparent, color-mix(in oklab, var(--accent-soft) 40%, transparent), transparent)}
+  .xp-when{
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);
+    padding-top:8px;
+  }
+  .xp-when .dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:middle;animation:pulse 2.4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 0 color-mix(in oklab, var(--accent) 40%, transparent)}50%{box-shadow:0 0 0 6px transparent}}
+  .xp-body h3{
+    font-family:'Instrument Serif',serif;font-weight:400;
+    font-size:34px;line-height:1.05;letter-spacing:-0.015em;
+    margin-bottom:6px;
+  }
+  .xp-body .where{
+    font-size:14px;color:var(--ink-soft);margin-bottom:18px;
+  }
+  .xp-body .where span{color:var(--ink-muted)}
+  .xp-body ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:14px}
+  .xp-body li{
+    font-size:15px;line-height:1.6;color:var(--ink-soft);
+    padding-left:22px;position:relative;
+  }
+  .xp-body li::before{
+    content:"";position:absolute;left:0;top:11px;
+    width:10px;height:1px;background:var(--ink-muted);
+  }
+  .xp-body li b{color:var(--ink);font-weight:500}
+  .xp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+  .tag{
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.06em;
+    color:var(--ink-soft);padding:4px 9px;
+    border:1px solid var(--rule);border-radius:999px;
+    background:color-mix(in oklab, var(--paper) 70%, white);
+  }
+
+  /* ============== HIGHLIGHTS ============== */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rule);border:1px solid var(--rule)}
+  .card{
+    background:var(--paper);
+    padding:36px 32px 40px;
+    display:flex;flex-direction:column;gap:14px;
+    transition:background .35s ease;
+  }
+  .card:hover{background:color-mix(in oklab, var(--paper) 70%, white)}
+  .card .kicker{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent)}
+  .card h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:30px;line-height:1.05;letter-spacing:-0.015em}
+  .card p{font-size:14px;line-height:1.6;color:var(--ink-soft)}
+  .card .meta{
+    margin-top:auto;padding-top:18px;
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);
+    display:flex;justify-content:space-between;
+  }
+
+  /* ============== SKILLS ============== */
+  .sk-note{
+    font-size:14px;line-height:1.6;color:var(--ink-soft);
+    margin:-30px 0 50px;max-width:60ch;font-style:italic;
+  }
+  .sk-sub{
+    font-style:italic;text-transform:none;letter-spacing:0;color:var(--ink-muted);
+    font-family:'Instrument Serif',serif;font-size:13px;margin-left:6px;
+  }
+  .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:60px}
+  .skill-col h5{
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;
+    color:var(--ink-muted);margin-bottom:22px;padding-bottom:14px;border-bottom:1px solid var(--rule);
+  }
+  .skill-row{
+    display:grid;grid-template-columns:1fr auto;align-items:baseline;gap:16px;
+    padding:14px 0;border-bottom:1px dashed var(--rule);
+  }
+  .skill-row .name-s{font-size:16px;color:var(--ink)}
+  .skill-row .lvl{
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);
+  }
+  .bar{
+    grid-column:1/-1;height:2px;background:var(--rule);border-radius:2px;overflow:hidden;margin-top:8px;
+  }
+  .bar > span{display:block;height:100%;background:var(--ink);transform-origin:left;animation:fill 1.2s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes fill{from{transform:scaleX(0)}}
+
+  /* ============== EDUCATION + LANG ============== */
+  .two-col{display:grid;grid-template-columns:1.2fr 1fr;gap:80px}
+  .edu-item{padding:24px 0;border-top:1px solid var(--rule)}
+  .edu-item:last-child{border-bottom:1px solid var(--rule)}
+  .edu-item h4{font-family:'Instrument Serif',serif;font-weight:400;font-size:28px;letter-spacing:-0.015em;line-height:1.1}
+  .edu-item .school{
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);
+    margin-top:6px;display:flex;justify-content:space-between;
+  }
+  .edu-item p{font-size:14px;line-height:1.55;color:var(--ink-soft);margin-top:12px}
+
+  .lang-card{padding:28px 0;border-top:1px solid var(--rule);display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+  .lang-card:last-child{border-bottom:1px solid var(--rule)}
+  .lang-card .l{font-family:'Instrument Serif',serif;font-size:32px;letter-spacing:-0.015em}
+  .lang-card .lv{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted)}
+  .dots{display:flex;gap:5px;margin-top:8px}
+  .dots span{width:8px;height:8px;border-radius:50%;background:var(--rule)}
+  .dots span.on{background:var(--ink)}
+  .dots span.half{background:linear-gradient(90deg,var(--ink) 50%,var(--rule) 50%)}
+
+  /* ============== PHILOSOPHY ============== */
+  .quote{
+    max-width:var(--max);margin:0 auto;padding:60px 32px 100px;
+    text-align:center;
+  }
+  .quote q{
+    font-family:'Instrument Serif',serif;font-style:italic;
+    font-size:clamp(28px,3.5vw,46px);line-height:1.25;letter-spacing:-0.015em;
+    color:var(--ink);
+    quotes:"“" "”";
+  }
+  .quote q::before, .quote q::after{color:var(--accent);font-size:1.2em;font-style:normal}
+  .quote .who{
+    margin-top:28px;
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-muted);
+  }
+
+  /* ============== FOOTER (excluded from PDF) ============== */
+  .footer{
+    position:fixed;left:0;right:0;bottom:0;z-index:40;
+    background:rgba(26,23,20,0.94);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    color:#f4ede0;
+    border-top:1px solid rgba(255,255,255,0.08);
+  }
+  .footer-inner{
+    max-width:var(--max);margin:0 auto;
+    padding:18px 32px;
+    display:flex;align-items:center;justify-content:space-between;gap:24px;
+  }
+  .foot-left{display:flex;align-items:center;gap:18px;font-size:13px;color:rgba(244,237,224,0.7)}
+  .foot-left a{color:rgba(244,237,224,0.85)}
+  .foot-left a:hover{color:#fff}
+  .foot-actions{display:flex;align-items:center;gap:10px}
+  .toggle{
+    display:flex;background:rgba(255,255,255,0.06);
+    border:1px solid rgba(255,255,255,0.1);border-radius:999px;padding:3px;
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;
+  }
+  .toggle button{
+    background:transparent;border:0;cursor:pointer;color:rgba(244,237,224,0.6);
+    padding:7px 14px;border-radius:999px;font:inherit;letter-spacing:inherit;
+    transition:all .25s ease;
+  }
+  .toggle button.active{background:#f4ede0;color:#1a1714}
+  .toggle button:hover:not(.active){color:#f4ede0}
+  .pdf-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    background:#f4ede0;color:#1a1714;border:0;cursor:pointer;
+    padding:10px 18px;border-radius:999px;
+    font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .pdf-btn:hover{background:#fff;transform:translateY(-1px)}
+  .pdf-btn svg{width:13px;height:13px}
+
+  /* ============== RESPONSIVE ============== */
+  @media (max-width: 880px){
+    /* Fluid side padding: starts at desktop's 32px at breakpoint, shrinks to 0 by ~360px */
+    :root{
+      --gutter: clamp(14px, calc((100vw - 360px) / (880 - 360) * 34 + 14px), 48px);
+    }
+    .topbar-inner{padding-left:var(--gutter);padding-right:var(--gutter)}
+
+    /* Asymmetric overlap hero: portrait floats top-right next to the name, */
+    /* shrinking fluidly so it always fits beside the text — never on top. */
+    .hero{
+      display:block;
+      padding:40px var(--gutter) 20px;
+      position:relative;
+      overflow:hidden;
+    }
+    .hero::after{content:"";display:block;clear:both}
+    .hero-main{display:contents}
+    .hero-side{display:contents}
+    .eyebrow{margin:0 0 24px;float:none;clear:both;width:100%;display:flex;position:relative;z-index:2}
+    .hero-side .portrait{
+      float:right;
+      /* Fluid: ~190px at 880, scales down to ~78px at 360. Always fits beside name. */
+      width:clamp(78px, calc(78px + (100vw - 360px) * 0.215), 190px);
+      aspect-ratio:4/5;
+      max-width:none;
+      margin:0 0 12px clamp(12px, 3vw, 24px);
+      shape-outside:inset(0);
+    }
+    .hero-side .portrait-cap{
+      position:absolute;right:8px;bottom:6px;left:8px;
+      width:auto;
+      max-width:none;
+      margin:0;
+      text-align:right;
+      display:block;
+      font-size:8px;
+      color:rgba(255,255,255,0.92);
+      text-shadow:0 1px 2px rgba(0,0,0,0.4);
+      float:none;
+    }
+    .eyebrow{margin-bottom:24px;clear:right;float:left;width:100%}
+    .name{
+      /* Fluid name size shrinks alongside the portrait so they coexist cleanly. */
+      font-size:clamp(40px, calc(40px + (100vw - 360px) * 0.092), 88px);
+      line-height:0.94;
+    }
+    .role{
+      clear:both;
+      margin-top:28px;
+      font-size:15px;
+      max-width:none;
+    }
+
+    .strip{grid-template-columns:repeat(2,1fr);gap:32px;padding:40px var(--gutter) 60px}
+    section{padding:60px var(--gutter)}
+    .quote{padding-left:var(--gutter);padding-right:var(--gutter)}
+    .footer-inner{padding-left:var(--gutter);padding-right:var(--gutter)}
+    .section-head{grid-template-columns:1fr;gap:16px}
+    .xp{grid-template-columns:1fr;gap:16px}
+    .grid-3{grid-template-columns:1fr}
+    .skills-grid{grid-template-columns:1fr;gap:32px}
+    .two-col{grid-template-columns:1fr;gap:40px}
+    .topbar nav{display:none}
+    .footer-inner{flex-wrap:wrap;justify-content:center;text-align:center}
+    .foot-left{order:2;width:100%;justify-content:center}
+    body{padding-bottom:170px}
+  }
+
+  /* Below 360px (extreme) — keep portrait beside name but very small */
+  @media (max-width: 360px){
+    .hero-side .portrait{width:72px;margin-left:10px}
+    .name{font-size:38px}
+  }
+
+  /* ============== PRINT ============== */
+  @media print{
+    @page{size:A4;margin:14mm 12mm}
+    html,body{background:#fff;color:#000}
+    body{padding:0}
+    .topbar,.footer,.portrait-cap{display:none !important}
+    .hero{padding:0 0 12px;grid-template-columns:1.5fr 1fr;gap:30px;page-break-after:avoid}
+    .name{font-size:52px}
+    .strip{padding:14px 0;margin-top:14px;page-break-inside:avoid;gap:20px}
+    .stat .num{font-size:32px}
+    .stat .num small{font-size:14px}
+    section{padding:24px 0;page-break-inside:avoid}
+    .section-head{margin-bottom:20px;gap:24px;grid-template-columns:160px 1fr}
+    .section-head h2{font-size:36px}
+    .xp{padding:14px 0;gap:24px;grid-template-columns:140px 1fr;page-break-inside:avoid}
+    .xp-body h3{font-size:20px}
+    .xp-body li{font-size:11.5px;line-height:1.45}
+    .xp-body .where{font-size:11px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .card{padding:14px;page-break-inside:avoid}
+    .card h4{font-size:16px}
+    .card p{font-size:11px}
+    .skills-grid{gap:30px}
+    .skill-row .name-s{font-size:12px}
+    .two-col{gap:30px}
+    .edu-item h4{font-size:16px}
+    .lang-card .l{font-size:18px}
+    .quote{padding:24px 0}
+    .quote q{font-size:20px}
+    .portrait{filter:grayscale(1);max-width:200px}
+    a[href]:after{content:""}
+  }
+
+  /* slide-up reveal */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="mono">JJC · CV · 2026</span>
+    <nav>
+      <a href="#work" data-i="nav.work">Work</a>
+      <a href="#highlights" data-i="nav.highlights">Highlights</a>
+      <a href="#skills" data-i="nav.skills">Skills</a>
+      <a href="#education" data-i="nav.education">Education</a>
+    </nav>
+    <span class="mono"><span data-i="topbar.loc">Medellín · Remote</span></span>
+  </div>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="eyebrow">
+    <span class="dot"></span>
+    <span class="mono" data-i="hero.eyebrow">Open to new opportunities — Available now</span>
+  </div>
+  <aside class="hero-side">
+    <div class="portrait" role="img" aria-label="Juan José Cano Duque">
+      <span class="portrait-cap" data-i="hero.cap">Perito Moreno · Patagonia, AR</span>
+    </div>
+  </aside>
+  <div class="hero-main">
+    <h1 class="name">Juan&nbsp;José<br/>Cano <em>Duque</em>.</h1>
+    <p class="role">
+      <strong data-i="hero.role">Software Engineer · QA Automation Lead · AI Driven.</strong>
+      <span data-i="hero.bio"> A decade of building, breaking, and automating production systems — from team-led Java backends to AI-powered tooling for global brands. Driven by a hunger to keep learning, ship quality at scale, and let machines handle the boring parts.</span>
+    </p>
+  </div>
+</header>
+
+<!-- ===================== STATS ===================== -->
+<div class="strip">
+  <div class="stat">
+    <div class="num">10<small>+</small></div>
+    <div class="lbl" data-i="stat.years">Years building software</div>
+  </div>
+  <div class="stat">
+    <div class="num">5</div>
+    <div class="lbl" data-i="stat.industries">Industries · Streaming, Aviation, Finance, Edu, AI</div>
+  </div>
+  <div class="stat">
+    <div class="num">3</div>
+    <div class="lbl" data-i="stat.velocity">Continents shipped to · NA, EU, LATAM</div>
+  </div>
+  <div class="stat">
+    <div class="num">2</div>
+    <div class="lbl" data-i="stat.degrees">Degrees · CS &amp; Data Science</div>
+  </div>
+</div>
+
+<!-- ===================== WORK ===================== -->
+<section id="work">
+  <div class="section-head">
+    <div class="label" data-i="work.label">§ 01 — Selected Work</div>
+    <h2><span data-i="work.h2a">A career, in</span> <em data-i="work.h2b">layers.</em></h2>
+  </div>
+
+  <div class="xp-list">
+
+    <div class="xp">
+      <div class="xp-when"><span class="dot"></span>Dec 2025 — Mar 2026</div>
+      <div class="xp-body">
+        <h3 data-i="xpY.role">Senior Test Automation Engineer</h3>
+        <div class="where"><b>Yuno</b> <span>·</span> <span data-i="xpY.client">Fintech · Hybrid · Colombia</span></div>
+        <ul>
+          <li data-i="xpY.b1"><b>AI-Augmented Development:</b> executed high-stakes workflows inside a demanding <b>agentic AI environment</b> serving the international financial industry.</li>
+          <li data-i="xpY.b2"><b>SDLC optimization via agents:</b> leveraged AI agents as the primary interface across the full software lifecycle — building, testing, debugging and rapid issue resolution.</li>
+          <li data-i="xpY.b3"><b>Feature delivery with agents:</b> shipped new product features by orchestrating AI agent tools to keep velocity and precision high in a complex landscape.</li>
+          <li data-i="xpY.b4"><b>Technical resilience:</b> thrived in a fast-paced, high-pressure setting, consistently meeting the rigorous <b>security and performance standards</b> of global fintech.</li>
+        </ul>
+        <div class="xp-tags">
+          <span class="tag">Agentic AI</span><span class="tag">Fintech</span><span class="tag">SDLC Automation</span><span class="tag">Claude Code</span><span class="tag">High-velocity QA</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="xp">
+      <div class="xp-when">2024 — 2025</div>
+      <div class="xp-body">
+        <h3 data-i="xp1.role">QA Automation Lead</h3>
+        <div class="where"><b>Globant</b> <span>·</span> <span data-i="xp1.client">British Airways</span></div>
+        <ul>
+          <li data-i="xp1.b1">Designed and implemented a new <b>UI testing framework</b> for a complex, multi-team airline product.</li>
+          <li data-i="xp1.b2">Acted as <b>QA focal point</b>, leading integration and stakeholder relationships across multiple teams.</li>
+          <li data-i="xp1.b3">Improved integrations across <b>GitHub Actions, BrowserStack, WDIO 9</b> and internal libraries.</li>
+          <li data-i="xp1.b4">Already integrating <b>AI tooling</b> into QA workflows before it became mainstream.</li>
+        </ul>
+        <div class="xp-tags">
+          <span class="tag">WDIO 9</span><span class="tag">TypeScript</span><span class="tag">BrowserStack</span><span class="tag">GitHub Actions</span><span class="tag">AI Tooling</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="xp">
+      <div class="xp-when">2023 — 2024</div>
+      <div class="xp-body">
+        <h3 data-i="xp2.role">Senior Test Automation Engineer</h3>
+        <div class="where"><b>Globant</b> <span>·</span> <span data-i="xp2.client">Disney Streaming</span></div>
+        <ul>
+          <li data-i="xp2.b1">Led the strategic <b>refactor of a metadata automation framework</b> — <b>+20%</b> faster execution, <b>+30%</b> faster test development.</li>
+          <li data-i="xp2.b2">Directed <b>QA best practices</b> rollout, increasing stakeholder confidence in the testing process.</li>
+          <li data-i="xp2.b3">Interviewed and onboarded engineers to grow the team.</li>
+        </ul>
+        <div class="xp-tags">
+          <span class="tag">Karate</span><span class="tag">Spinnaker</span><span class="tag">Java</span><span class="tag">QA Strategy</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="xp">
+      <div class="xp-when">2019 — 2023</div>
+      <div class="xp-body">
+        <h3 data-i="xp3.role">Senior Test Automation Engineer</h3>
+        <div class="where"><b>Globant</b> <span>·</span> <span data-i="xp3.client">Deluxe Entertainment</span></div>
+        <ul>
+          <li data-i="xp3.b1">Designed and executed automation strategies for a <b>cluster of critical APIs and UIs</b> using Python &amp; Selenium.</li>
+          <li data-i="xp3.b2">Pioneered and led new automation projects with <b>Playwright</b>.</li>
+          <li data-i="xp3.b3">Mentored and onboarded <b>Junior Automation Engineers</b>.</li>
+        </ul>
+        <div class="xp-tags">
+          <span class="tag">Python</span><span class="tag">Selenium</span><span class="tag">Playwright</span><span class="tag">Mentorship</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="xp">
+      <div class="xp-when">2017 — 2019</div>
+      <div class="xp-body">
+        <h3 data-i="xp4.role">Java Developer · Team Lead</h3>
+        <div class="where"><b>H.M Solutions</b></div>
+        <ul>
+          <li data-i="xp4.b1">Led a small team building a <b>full ERP suite</b> — digital invoicing, inventory, purchases, sales and payroll — in Java.</li>
+        </ul>
+        <div class="xp-tags">
+          <span class="tag">Java</span><span class="tag">Team Lead</span><span class="tag">ERP</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="xp">
+      <div class="xp-when">2014 — 2016</div>
+      <div class="xp-body">
+        <h3 data-i="xp5.role">Web Developer</h3>
+        <div class="where"><b>Ingenisoft</b></div>
+        <ul>
+          <li data-i="xp5.b1">Built a municipal <b>public lighting management system</b> using PHP and the Google GPS API.</li>
+        </ul>
+        <div class="xp-tags">
+          <span class="tag">PHP</span><span class="tag">Google Maps API</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== HIGHLIGHTS ===================== -->
+<section id="highlights">
+  <div class="section-head">
+    <div class="label" data-i="hl.label">§ 02 — Selected Projects</div>
+    <h2><span data-i="hl.h2a">Things I'm</span> <em data-i="hl.h2b">proud of.</em></h2>
+  </div>
+
+  <div class="grid-3">
+    <article class="card">
+      <span class="kicker" data-i="hl1.k">AI · Accessibility</span>
+      <h4 data-i="hl1.t">Sign-language transcription model</h4>
+      <p data-i="hl1.p">Fine-tuned a sign-language transcription model for an NGO in Argentina — early hands-on work with vision models for real-world social impact.</p>
+      <div class="meta"><span data-i="hl1.m1">NGO · Argentina</span><span>2023</span></div>
+    </article>
+
+    <article class="card">
+      <span class="kicker" data-i="hl2.k">AI · Production</span>
+      <h4 data-i="hl2.t">Student-facing RAG chatbot</h4>
+      <p data-i="hl2.p">Built and shipped a RAG system currently running in production as a student-facing chatbot for a university in Colombia.</p>
+      <div class="meta"><span data-i="hl2.m1">University · Colombia</span><span>2024</span></div>
+    </article>
+
+    <article class="card">
+      <span class="kicker" data-i="hl3.k">SDET · AI Workflows</span>
+      <h4 data-i="hl3.t">Agentic dev cycle with Claude Code</h4>
+      <p data-i="hl3.p">Used Claude Code across the full development cycle as an SDET — moving directly into dev repos to implement fixes, not just file tickets.</p>
+      <div class="meta"><span data-i="hl3.m1">Internal · 2024 →</span><span data-i="hl3.m2">SDET</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section id="skills">
+  <div class="section-head">
+    <div class="label" data-i="sk.label">§ 03 — Toolkit</div>
+    <h2><span data-i="sk.h2a">What I reach for</span> <em data-i="sk.h2b">first.</em></h2>
+  </div>
+
+  <p class="sk-note" data-i="sk.note">Honest read on where I am today — calibrated by what I touch most, not by what looks best on paper.</p>
+
+  <div class="skills-grid">
+    <div class="skill-col">
+      <h5 data-i="sk.now">Currently Sharp <span class="sk-sub">/ daily, last 12 months</span></h5>
+      <div class="skill-row"><span class="name-s">TypeScript / JavaScript</span><span class="lvl" data-i="sk.lvl.daily">Daily</span><div class="bar"><span style="width:92%"></span></div></div>
+      <div class="skill-row"><span class="name-s">Playwright · WDIO 9</span><span class="lvl" data-i="sk.lvl.daily2">Daily</span><div class="bar"><span style="width:94%"></span></div></div>
+      <div class="skill-row"><span class="name-s">Claude Code · Agentic Dev</span><span class="lvl" data-i="sk.lvl.daily3">Daily Driver</span><div class="bar"><span style="width:95%"></span></div></div>
+      <div class="skill-row"><span class="name-s">GitHub Actions · CI/CD</span><span class="lvl" data-i="sk.lvl.weekly">Weekly</span><div class="bar"><span style="width:84%"></span></div></div>
+      <div class="skill-row"><span class="name-s">BrowserStack</span><span class="lvl" data-i="sk.lvl.weekly2">Weekly</span><div class="bar"><span style="width:78%"></span></div></div>
+    </div>
+
+    <div class="skill-col">
+      <h5 data-i="sk.recent">Recent &amp; Confident <span class="sk-sub">/ last 1–3 years</span></h5>
+      <div class="skill-row"><span class="name-s">Python</span><span class="lvl" data-i="sk.lvl.solid">Solid · refresher away</span><div class="bar"><span style="width:78%"></span></div></div>
+      <div class="skill-row"><span class="name-s">Selenium</span><span class="lvl" data-i="sk.lvl.solid2">Solid · ramp-back ready</span><div class="bar"><span style="width:75%"></span></div></div>
+      <div class="skill-row"><span class="name-s">Karate · API Testing</span><span class="lvl" data-i="sk.lvl.solid3">Comfortable</span><div class="bar"><span style="width:72%"></span></div></div>
+      <div class="skill-row"><span class="name-s">RAG Systems</span><span class="lvl" data-i="sk.lvl.prod">Shipped to production</span><div class="bar"><span style="width:80%"></span></div></div>
+      <div class="skill-row"><span class="name-s">Model Fine-tuning</span><span class="lvl" data-i="sk.lvl.applied">Applied</span><div class="bar"><span style="width:70%"></span></div></div>
+      <div class="skill-row"><span class="name-s">SQL · Data Modeling</span><span class="lvl" data-i="sk.lvl.solid4">Solid</span><div class="bar"><span style="width:74%"></span></div></div>
+    </div>
+
+    <div class="skill-col">
+      <h5 data-i="sk.foundation">Foundational <span class="sk-sub">/ shipped with, will ramp</span></h5>
+      <div class="skill-row"><span class="name-s">Java</span><span class="lvl" data-i="sk.lvl.found">Foundational</span><div class="bar"><span style="width:55%"></span></div></div>
+      <div class="skill-row"><span class="name-s">PHP</span><span class="lvl" data-i="sk.lvl.found2">Foundational</span><div class="bar"><span style="width:40%"></span></div></div>
+      <div class="skill-row"><span class="name-s" data-i="sk.dsa">Algorithms &amp; Data Structures</span><span class="lvl" data-i="sk.lvl.degree">Degree-grade</span><div class="bar"><span style="width:72%"></span></div></div>
+      <div class="skill-row"><span class="name-s" data-i="sk.ml">ML Modeling · Data Analysis</span><span class="lvl" data-i="sk.lvl.applied2">Applied</span><div class="bar"><span style="width:68%"></span></div></div>
+    </div>
+
+    <div class="skill-col">
+      <h5 data-i="sk.lead">Leadership &amp; Way of Working</h5>
+      <div class="skill-row"><span class="name-s" data-i="sk.l1">Mentoring engineers</span><span class="lvl" data-i="sk.lvl.5y">5+ yrs</span><div class="bar"><span style="width:90%"></span></div></div>
+      <div class="skill-row"><span class="name-s" data-i="sk.l2">Stakeholder management</span><span class="lvl" data-i="sk.lvl.daily4">Daily</span><div class="bar"><span style="width:85%"></span></div></div>
+      <div class="skill-row"><span class="name-s" data-i="sk.l3">Async / remote workflow</span><span class="lvl" data-i="sk.lvl.native">Native</span><div class="bar"><span style="width:95%"></span></div></div>
+      <div class="skill-row"><span class="name-s" data-i="sk.l4">Hiring &amp; interviewing</span><span class="lvl" data-i="sk.lvl.disney">Disney era</span><div class="bar"><span style="width:75%"></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EDUCATION + LANG ===================== -->
+<section id="education">
+  <div class="section-head">
+    <div class="label" data-i="ed.label">§ 04 — Education &amp; Languages</div>
+    <h2><span data-i="ed.h2a">Formally</span> <em data-i="ed.h2b">curious.</em></h2>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <div class="edu-item">
+        <h4 data-i="ed1.t">Master — Data Science</h4>
+        <div class="school"><span>CEUPE</span><span>2023</span></div>
+        <p data-i="ed1.p">Focused on data analysis &amp; ML modeling — the foundation behind production RAG and fine-tuning work that followed.</p>
+      </div>
+      <div class="edu-item">
+        <h4 data-i="ed2.t">Bachelor's Degree — Computer Science</h4>
+        <div class="school"><span>Unisabaneta</span><span>2018</span></div>
+        <p data-i="ed2.p">Strength in algorithms — the backbone behind framework design and performance refactors.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="lang-card">
+        <div>
+          <div class="l">Español</div>
+          <div class="dots"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></div>
+        </div>
+        <span class="lv" data-i="lg.es">Native</span>
+      </div>
+      <div class="lang-card">
+        <div>
+          <div class="l">English</div>
+          <div class="dots"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="half"></span></div>
+        </div>
+        <span class="lv" data-i="lg.en">Advanced · C1</span>
+      </div>
+      <div class="lang-card">
+        <div>
+          <div class="l" data-i="lg.h">Off-keyboard</div>
+          <div class="dots"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div>
+        </div>
+        <span class="lv" data-i="lg.hl">Dance · Music</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== QUOTE ===================== -->
+<div class="quote">
+  <q data-i="q.text">I write production code, and I know how to test it. Building, automating, and optimizing is something I genuinely enjoy doing.</q>
+  <div class="who" data-i="q.who">— Juan José</div>
+</div>
+
+<!-- ===================== FOOTER (excluded from PDF) ===================== -->
+<footer class="footer" id="site-footer">
+  <div class="footer-inner">
+    <div class="foot-left">
+      <span class="mono">© 2026</span>
+      <a href="mailto:jjcadu@gmail.com">jjcadu@gmail.com</a>
+      <span style="opacity:.4">·</span>
+      <a href="https://linkedin.com/in/juan-jose-cano-duque" target="_blank" rel="noopener">/juan-jose-cano-duque</a>
+    </div>
+    <div class="foot-actions">
+      <div class="toggle" role="group" aria-label="Language">
+        <button id="lang-en" class="active" type="button">EN</button>
+        <button id="lang-es" type="button">ES</button>
+      </div>
+      <button id="pdf-btn" class="pdf-btn" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span id="pdf-label">Download PDF</span>
+      </button>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============== I18N ============== */
+const I18N = {
+  en: {
+    "nav.work":"Work","nav.highlights":"Highlights","nav.skills":"Skills","nav.education":"Education",
+    "topbar.loc":"Medellín · Remote",
+    "hero.eyebrow":"Open to new opportunities — Available now",
+    "hero.role":"Software Engineer · QA Automation Lead · AI Driven.",
+    "hero.bio":" A decade of building, breaking, and automating production systems — from team-led Java backends to AI-powered tooling for global brands. Driven by a hunger to keep learning, ship quality at scale, and let machines handle the boring parts.",
+    "hero.cap":"Perito Moreno · Patagonia, AR",
+    "stat.years":"Years building software",
+    "stat.industries":"Industries · Streaming, Aviation, Finance, Edu, AI",
+    "stat.velocity":"Continents shipped to · NA, EU, LATAM",
+    "stat.degrees":"Degrees · CS & Data Science",
+
+    "work.label":"§ 01 — Selected Work",
+    "work.h2a":"A career, in","work.h2b":"layers.",
+    "xp.now":"Present",
+    "xp1.role":"QA Automation Lead","xp1.client":"British Airways",
+    "xpY.role":"Senior Test Automation Engineer","xpY.client":"Fintech · Hybrid · Colombia",
+    "xpY.b1":"<b>AI-Augmented Development:</b> executed high-stakes workflows inside a demanding <b>agentic AI environment</b> serving the international financial industry.",
+    "xpY.b2":"<b>SDLC optimization via agents:</b> leveraged AI agents as the primary interface across the full software lifecycle — building, testing, debugging and rapid issue resolution.",
+    "xpY.b3":"<b>Feature delivery with agents:</b> shipped new product features by orchestrating AI agent tools to keep velocity and precision high in a complex landscape.",
+    "xpY.b4":"<b>Technical resilience:</b> thrived in a fast-paced, high-pressure setting, consistently meeting the rigorous <b>security and performance standards</b> of global fintech.",
+    "xp1.b1":"Designed and implemented a new <b>UI testing framework</b> for a complex, multi-team airline product.",
+    "xp1.b2":"Acted as <b>QA focal point</b>, leading integration and stakeholder relationships across multiple teams.",
+    "xp1.b3":"Improved integrations across <b>GitHub Actions, BrowserStack, WDIO 9</b> and internal libraries.",
+    "xp1.b4":"Already integrating <b>AI tooling</b> into QA workflows before it became mainstream.",
+    "xp2.role":"Senior Test Automation Engineer","xp2.client":"Disney Streaming",
+    "xp2.b1":"Led the strategic <b>refactor of a metadata automation framework</b> — <b>+20%</b> faster execution, <b>+30%</b> faster test development.",
+    "xp2.b2":"Directed <b>QA best practices</b> rollout, increasing stakeholder confidence in the testing process.",
+    "xp2.b3":"Interviewed and onboarded engineers to grow the team.",
+    "xp3.role":"Senior Test Automation Engineer","xp3.client":"Deluxe Entertainment",
+    "xp3.b1":"Designed and executed automation strategies for a <b>cluster of critical APIs and UIs</b> using Python & Selenium.",
+    "xp3.b2":"Pioneered and led new automation projects with <b>Playwright</b>.",
+    "xp3.b3":"Mentored and onboarded <b>Junior Automation Engineers</b>.",
+    "xp4.role":"Java Developer · Team Lead",
+    "xp4.b1":"Led a small team building a <b>full ERP suite</b> — digital invoicing, inventory, purchases, sales and payroll — in Java.",
+    "xp5.role":"Web Developer",
+    "xp5.b1":"Built a municipal <b>public lighting management system</b> using PHP and the Google GPS API.",
+
+    "hl.label":"§ 02 — Selected Projects",
+    "hl.h2a":"Things I'm","hl.h2b":"proud of.",
+    "hl1.k":"AI · Accessibility","hl1.t":"Sign-language transcription model",
+    "hl1.p":"Fine-tuned a sign-language transcription model for an NGO in Argentina — early hands-on work with vision models for real-world social impact.",
+    "hl1.m1":"NGO · Argentina",
+    "hl2.k":"AI · Production","hl2.t":"Student-facing RAG chatbot",
+    "hl2.p":"Built and shipped a RAG system currently running in production as a student-facing chatbot for a university in Colombia.",
+    "hl2.m1":"University · Colombia",
+    "hl3.k":"SDET · AI Workflows","hl3.t":"Agentic dev cycle with Claude Code",
+    "hl3.p":"Used Claude Code across the full development cycle as an SDET — moving directly into dev repos to implement fixes, not just file tickets.",
+    "hl3.m1":"Internal · 2024 →","hl3.m2":"SDET",
+
+    "sk.label":"§ 03 — Toolkit",
+    "sk.h2a":"What I reach for","sk.h2b":"first.",
+    "sk.note":"Honest read on where I am today — calibrated by what I touch most, not by what looks best on paper.",
+    "sk.now":"Currently Sharp <span class=\"sk-sub\">/ daily, last 12 months</span>",
+    "sk.recent":"Recent &amp; Confident <span class=\"sk-sub\">/ last 1–3 years</span>",
+    "sk.foundation":"Foundational <span class=\"sk-sub\">/ shipped with, will ramp</span>",
+    "sk.lead":"Leadership &amp; Way of Working",
+    "sk.dsa":"Algorithms &amp; Data Structures",
+    "sk.ml":"ML Modeling · Data Analysis",
+    "sk.lvl.daily":"Daily","sk.lvl.daily2":"Daily","sk.lvl.daily3":"Daily Driver","sk.lvl.daily4":"Daily",
+    "sk.lvl.weekly":"Weekly","sk.lvl.weekly2":"Weekly",
+    "sk.lvl.solid":"Solid · refresher away","sk.lvl.solid2":"Solid · ramp-back ready","sk.lvl.solid3":"Comfortable","sk.lvl.solid4":"Solid",
+    "sk.lvl.prod":"Shipped to production","sk.lvl.applied":"Applied","sk.lvl.applied2":"Applied",
+    "sk.lvl.found":"Foundational","sk.lvl.found2":"Foundational",
+    "sk.lvl.degree":"Degree-grade",
+    "sk.lvl.5y":"5+ yrs","sk.lvl.native":"Native","sk.lvl.disney":"Disney era",
+    "sk.l1":"Mentoring engineers","sk.l2":"Stakeholder management","sk.l3":"Async / remote workflow","sk.l4":"Hiring &amp; interviewing",
+
+    "ed.label":"§ 04 — Education & Languages",
+    "ed.h2a":"Formally","ed.h2b":"curious.",
+    "ed1.t":"Master — Data Science",
+    "ed1.p":"Focused on data analysis & ML modeling — the foundation behind production RAG and fine-tuning work that followed.",
+    "ed2.t":"Bachelor's Degree — Computer Science",
+    "ed2.p":"Strength in algorithms — the backbone behind framework design and performance refactors.",
+    "lg.es":"Native","lg.en":"Advanced · C1",
+    "lg.h":"Off-keyboard","lg.hl":"Dance · Music",
+
+    "q.text":"I write production code, and I know how to test it. Building, automating, and optimizing is something I genuinely enjoy doing.",
+    "q.who":"— Juan José",
+
+    "pdf":"Download PDF"
+  },
+  es: {
+    "nav.work":"Experiencia","nav.highlights":"Proyectos","nav.skills":"Habilidades","nav.education":"Educación",
+    "topbar.loc":"Medellín · Remoto",
+    "hero.eyebrow":"Abierto a nuevas oportunidades — Disponible ahora",
+    "hero.role":"Ingeniero de Software · Líder de Automatización QA · Orientado a IA.",
+    "hero.bio":" Una década construyendo, rompiendo y automatizando sistemas en producción — desde liderar equipos de backend en Java hasta crear herramientas con IA para marcas globales. Movido por las ganas de seguir aprendiendo, entregar calidad a escala y dejar que las máquinas se encarguen de lo aburrido.",
+    "hero.cap":"Perito Moreno · Patagonia, AR",
+    "stat.years":"Años construyendo software",
+    "stat.industries":"Industrias · Streaming, Aviación, Finanzas, Educación, IA",
+    "stat.velocity":"Continentes a los que he entregado · NA, EU, LATAM",
+    "stat.degrees":"Títulos · CS y Ciencia de Datos",
+
+    "work.label":"§ 01 — Experiencia Seleccionada",
+    "work.h2a":"Una carrera, por","work.h2b":"capas.",
+    "xp.now":"Actualidad",
+    "xp1.role":"Líder de Automatización QA","xp1.client":"British Airways",
+    "xpY.role":"Ingeniero Senior de Automatización","xpY.client":"Fintech · Híbrido · Colombia",
+    "xpY.b1":"<b>Desarrollo aumentado por IA:</b> ejecuté flujos de alto impacto dentro de un exigente <b>entorno de IA agéntica</b> al servicio de la industria financiera internacional.",
+    "xpY.b2":"<b>Optimización del SDLC con agentes:</b> usé agentes de IA como interfaz principal en todo el ciclo de vida del software — construcción, testing, debugging y resolución rápida de incidentes.",
+    "xpY.b3":"<b>Entrega de features con agentes:</b> implementé nuevas funcionalidades orquestando herramientas de agentes de IA para mantener velocidad y precisión en un entorno complejo.",
+    "xpY.b4":"<b>Resiliencia técnica:</b> me desempeñé en un entorno de alta presión y ritmo acelerado, cumpliendo los rigurosos <b>estándares de seguridad y rendimiento</b> del sector fintech global.",
+    "xp1.b1":"Diseñé e implementé un nuevo <b>framework de pruebas de UI</b> para un producto aeronáutico complejo y multi-equipo.",
+    "xp1.b2":"Actué como <b>punto focal de QA</b>, liderando la integración y las relaciones con stakeholders entre múltiples equipos.",
+    "xp1.b3":"Mejoré integraciones entre <b>GitHub Actions, BrowserStack, WDIO 9</b> y librerías internas.",
+    "xp1.b4":"Ya integraba <b>herramientas de IA</b> en flujos de QA antes de que fuera la corriente principal.",
+    "xp2.role":"Ingeniero Senior de Automatización","xp2.client":"Disney Streaming",
+    "xp2.b1":"Lideré el <b>refactor estratégico</b> de un framework de automatización de metadatos — <b>+20%</b> más rápido en ejecución, <b>+30%</b> en velocidad de escritura de pruebas.",
+    "xp2.b2":"Dirigí la implementación de <b>buenas prácticas de QA</b>, aumentando la confianza de los stakeholders en el proceso.",
+    "xp2.b3":"Entrevisté y onboardé ingenieros para hacer crecer el equipo.",
+    "xp3.role":"Ingeniero Senior de Automatización","xp3.client":"Deluxe Entertainment",
+    "xp3.b1":"Diseñé y ejecuté estrategias de automatización para un <b>cluster crítico de APIs y UIs</b> con Python y Selenium.",
+    "xp3.b2":"Pionero y líder de nuevos proyectos de automatización con <b>Playwright</b>.",
+    "xp3.b3":"Mentoricé y onboardé <b>ingenieros junior de automatización</b>.",
+    "xp4.role":"Desarrollador Java · Líder de Equipo",
+    "xp4.b1":"Lideré un equipo pequeño construyendo un <b>ERP completo</b> — facturación digital, inventario, compras, ventas y nómina — en Java.",
+    "xp5.role":"Desarrollador Web",
+    "xp5.b1":"Construí un sistema municipal de <b>gestión de alumbrado público</b> usando PHP y la API de Google GPS.",
+
+    "hl.label":"§ 02 — Proyectos Seleccionados",
+    "hl.h2a":"Cosas de las que","hl.h2b":"me enorgullezco.",
+    "hl1.k":"IA · Accesibilidad","hl1.t":"Modelo de transcripción de lengua de signos",
+    "hl1.p":"Realicé fine-tuning de un modelo de transcripción de lengua de signos para una ONG en Argentina — trabajo temprano y práctico con modelos de visión y un impacto social real.",
+    "hl1.m1":"ONG · Argentina",
+    "hl2.k":"IA · Producción","hl2.t":"Chatbot RAG para estudiantes",
+    "hl2.p":"Construí y desplegué un sistema RAG actualmente en producción como chatbot para estudiantes de una universidad en Colombia.",
+    "hl2.m1":"Universidad · Colombia",
+    "hl3.k":"SDET · Flujos con IA","hl3.t":"Ciclo agéntico de desarrollo con Claude Code",
+    "hl3.p":"Usé Claude Code en todo el ciclo de desarrollo como SDET — entrando directamente en repos de desarrollo para implementar arreglos, no solo abrir tickets.",
+    "hl3.m1":"Interno · 2024 →","hl3.m2":"SDET",
+
+    "sk.label":"§ 03 — Caja de Herramientas",
+    "sk.h2a":"Lo que uso","sk.h2b":"primero.",
+    "sk.note":"Una lectura honesta de dónde estoy hoy — calibrada por lo que toco más, no por lo que mejor se ve en papel.",
+    "sk.now":"Afilado ahora <span class=\"sk-sub\">/ uso diario, últimos 12 meses</span>",
+    "sk.recent":"Reciente y con confianza <span class=\"sk-sub\">/ últimos 1–3 años</span>",
+    "sk.foundation":"Fundacional <span class=\"sk-sub\">/ ya envié con esto, listo para retomar</span>",
+    "sk.lead":"Liderazgo y Forma de Trabajar",
+    "sk.dsa":"Algoritmos y Estructuras de Datos",
+    "sk.ml":"Modelado ML · Análisis de Datos",
+    "sk.lvl.daily":"Diario","sk.lvl.daily2":"Diario","sk.lvl.daily3":"Mi herramienta diaria","sk.lvl.daily4":"Diario",
+    "sk.lvl.weekly":"Semanal","sk.lvl.weekly2":"Semanal",
+    "sk.lvl.solid":"Sólido · a un repaso de distancia","sk.lvl.solid2":"Sólido · listo para retomar","sk.lvl.solid3":"Cómodo","sk.lvl.solid4":"Sólido",
+    "sk.lvl.prod":"En producción","sk.lvl.applied":"Aplicado","sk.lvl.applied2":"Aplicado",
+    "sk.lvl.found":"Fundacional","sk.lvl.found2":"Fundacional",
+    "sk.lvl.degree":"Nivel académico",
+    "sk.lvl.5y":"5+ años","sk.lvl.native":"Nativo","sk.lvl.disney":"Época Disney",
+    "sk.l1":"Mentoría de ingenieros","sk.l2":"Gestión de stakeholders","sk.l3":"Flujo async / remoto","sk.l4":"Contratación y entrevistas",
+
+    "ed.label":"§ 04 — Educación e Idiomas",
+    "ed.h2a":"Formalmente","ed.h2b":"curioso.",
+    "ed1.t":"Máster — Ciencia de Datos",
+    "ed1.p":"Enfocado en análisis de datos y modelado ML — la base detrás del trabajo posterior en RAG en producción y fine-tuning.",
+    "ed2.t":"Pregrado — Ingeniería de Sistemas",
+    "ed2.p":"Fuerte en algoritmos — la columna vertebral del diseño de frameworks y los refactors de rendimiento.",
+    "lg.es":"Nativo","lg.en":"Avanzado · C1",
+    "lg.h":"Fuera del teclado","lg.hl":"Baile · Música",
+
+    "q.text":"Escribo código en producción y sé cómo probarlo. Construir, automatizar y optimizar es algo que disfruto genuinamente.",
+    "q.who":"— Juan José",
+
+    "pdf":"Descargar PDF"
+  }
+};
+
+let currentLang = 'en';
+function setLang(lang){
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  const dict = I18N[lang];
+  document.querySelectorAll('[data-i]').forEach(el=>{
+    const k = el.getAttribute('data-i');
+    if (dict[k] !== undefined) el.innerHTML = dict[k];
+  });
+  document.getElementById('pdf-label').textContent = dict['pdf'];
+  document.getElementById('lang-en').classList.toggle('active', lang==='en');
+  document.getElementById('lang-es').classList.toggle('active', lang==='es');
+  try{ localStorage.setItem('cv.lang', lang) }catch(e){}
+}
+
+document.getElementById('lang-en').addEventListener('click', ()=>setLang('en'));
+document.getElementById('lang-es').addEventListener('click', ()=>setLang('es'));
+
+// init
+try{
+  const saved = localStorage.getItem('cv.lang');
+  if (saved === 'es' || saved === 'en') setLang(saved);
+}catch(e){}
+
+/* ============== PDF (print, footer hidden by @media print) ============== */
+document.getElementById('pdf-btn').addEventListener('click', ()=>{
+  // Pre-set a friendly title for the saved file
+  const prevTitle = document.title;
+  document.title = currentLang === 'es'
+    ? 'Juan Jose Cano Duque — Curriculum Vitae'
+    : 'Juan Jose Cano Duque — Curriculum Vitae';
+  setTimeout(()=>{ window.print(); document.title = prevTitle; }, 80);
+});
+
+/* ============== reveal on scroll ============== */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:0.12});
+document.querySelectorAll('.xp, .card, .stat, .edu-item, .lang-card, .skill-row').forEach((el,i)=>{
+  el.classList.add('reveal');
+  el.style.transitionDelay = (Math.min(i,8)*40)+'ms';
+  io.observe(el);
+});
+</script>
+
+</body>
+</html>
