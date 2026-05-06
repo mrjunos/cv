@@ -74,13 +74,6 @@
   .lang-list li{font-size:10pt;list-style:none;margin-bottom:1pt}
   .lang-list li b{font-weight:600}
 
-  /* Quote */
-  blockquote{margin-top:14pt;padding-top:8pt;border-top:0.5pt solid #000}
-  blockquote q{font-size:10pt;font-style:italic;line-height:1.5;display:block}
-  blockquote q::before{content:"\201C"}
-  blockquote q::after{content:"\201D"}
-  blockquote .who{font-size:9.5pt;margin-top:3pt;text-align:right}
-
   /* Inline emphasis preserved from JSON content */
   b, strong{font-weight:600}
 </style>
@@ -121,11 +114,6 @@
   <div id="ed-list"></div>
   <ul class="lang-list" id="lang-list"></ul>
 </section>
-
-<blockquote>
-  <q id="quote-text"></q>
-  <div class="who" id="quote-who"></div>
-</blockquote>
 
 <script>
 (async () => {
@@ -215,10 +203,6 @@
   const langItems = data.education.languages.map(l => `<li><b>${l.name}:</b> ${l.level}</li>`);
   langItems.push(`<li><b>${data.education.hobbies.label}:</b> ${data.education.hobbies.value}</li>`);
   document.getElementById('lang-list').innerHTML = langItems.join('');
-
-  // Quote
-  setText('quote-text', data.quote.text);
-  setText('quote-who', data.quote.who);
 })();
 </script>
 
