@@ -968,14 +968,14 @@ try{
   if (saved === 'es' || saved === 'en') setLang(saved);
 }catch(e){}
 
-/* ============== PDF (print, footer hidden by @media print) ============== */
+/* ============== PDF (download pre-rendered file matching active language) ============== */
 document.getElementById('pdf-btn').addEventListener('click', ()=>{
-  // Pre-set a friendly title for the saved file
-  const prevTitle = document.title;
-  document.title = currentLang === 'es'
-    ? 'Juan Jose Cano Duque — Curriculum Vitae'
-    : 'Juan Jose Cano Duque — Curriculum Vitae';
-  setTimeout(()=>{ window.print(); document.title = prevTitle; }, 80);
+  const link = document.createElement('a');
+  link.href = `cv-${currentLang}.pdf`;
+  link.download = `Juan-Jose-Cano-Duque-CV-${currentLang.toUpperCase()}.pdf`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
 });
 
 /* ============== reveal on scroll ============== */
