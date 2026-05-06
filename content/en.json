@@ -1,0 +1,248 @@
+{
+  "lang": "en",
+  "meta": {
+    "name": "Juan José Cano Duque",
+    "title": "Software Engineer · QA Automation Lead · AI Driven.",
+    "bio": "A decade of building, breaking, and automating production systems — from team-led Java backends to AI-powered tooling for global brands. Driven by a hunger to keep learning, ship quality at scale, and let machines handle the boring parts.",
+    "location": "Medellín · Remote",
+    "email": "jjcadu@gmail.com",
+    "linkedin": "https://linkedin.com/in/juan-jose-cano-duque",
+    "linkedinHandle": "/juan-jose-cano-duque",
+    "availability": "Open to new opportunities — Available now · Global remote · EOR-friendly",
+    "portraitCaption": "Perito Moreno · Patagonia, AR"
+  },
+  "ui": {
+    "nav": {
+      "capabilities": "Capabilities",
+      "work": "Work",
+      "highlights": "Highlights",
+      "skills": "Skills",
+      "education": "Education"
+    },
+    "downloadPdf": "Download PDF",
+    "presentLabel": "Present",
+    "documentTitle": "Juan José Cano Duque — Curriculum Vitae"
+  },
+  "stats": [
+    { "value": "10", "unit": "+", "label": "Years building software" },
+    { "value": "5", "unit": "", "label": "Industries · Streaming, Aviation, Finance, Edu, AI" },
+    { "value": "3", "unit": "", "label": "Continents shipped to · NA, EU, LATAM" },
+    { "value": "2", "unit": "", "label": "Degrees · CS & Data Science" }
+  ],
+  "capabilities": {
+    "label": "§ 01 — Agentic Transformation",
+    "headingPre": "Built for",
+    "headingEm": "transformation.",
+    "plainHeading": "Capabilities",
+    "items": [
+      {
+        "kicker": "In-house · SDLC",
+        "title": "Embed agentic AI across your dev cycle.",
+        "body": "Rewire SDLC loops — dev, testing, code review, releases — around agentic primitives. Daily drivers, not pilot decks."
+      },
+      {
+        "kicker": "Tooling · Integration",
+        "title": "Build the tools that fit your stack.",
+        "body": "Slash commands, hooks, MCP servers, internal CLIs. New AI tech ships weekly; I integrate it so the team feels the speed, not the friction."
+      },
+      {
+        "kicker": "Consulting · Delivery",
+        "title": "Transform workflows for your customers.",
+        "body": "Same playbook, applied to the teams you serve. Embed, ship the change, leave behind workflows that compound."
+      }
+    ]
+  },
+  "work": {
+    "label": "§ 02 — Selected Work",
+    "headingPre": "A career, in",
+    "headingEm": "layers.",
+    "plainHeading": "Selected Work",
+    "items": [
+      {
+        "role": "Senior Test Automation Engineer",
+        "company": "Yuno",
+        "client": "Fintech · Hybrid · Colombia",
+        "period": "Dec 2025 — Mar 2026",
+        "bullets": [
+          "<b>AI-Augmented Development:</b> executed high-stakes workflows inside a demanding <b>agentic AI environment</b> serving the international financial industry.",
+          "<b>SDLC optimization via agents:</b> leveraged AI agents as the primary interface across the full software lifecycle — building, testing, debugging and rapid issue resolution.",
+          "<b>Feature delivery with agents:</b> shipped new product features by orchestrating AI agent tools to keep velocity and precision high in a complex landscape.",
+          "<b>Technical resilience:</b> thrived in a fast-paced, high-pressure setting, consistently meeting the rigorous <b>security and performance standards</b> of global fintech."
+        ],
+        "tags": ["Agentic AI", "Fintech", "SDLC Automation", "Agentic Tooling", "High-velocity QA"]
+      },
+      {
+        "role": "QA Automation Lead",
+        "company": "Globant",
+        "client": "British Airways",
+        "period": "2024 — 2025",
+        "bullets": [
+          "Designed and implemented a new <b>UI testing framework</b> for a complex, multi-team airline product.",
+          "Acted as <b>QA focal point</b>, leading integration and stakeholder relationships across multiple teams.",
+          "Improved integrations across <b>GitHub Actions, BrowserStack, WDIO 9</b> and internal libraries.",
+          "Already integrating <b>AI tooling</b> into QA workflows before it became mainstream."
+        ],
+        "tags": ["WDIO 9", "TypeScript", "BrowserStack", "GitHub Actions", "AI Tooling"]
+      },
+      {
+        "role": "Senior Test Automation Engineer",
+        "company": "Globant",
+        "client": "Disney Streaming",
+        "period": "2023 — 2024",
+        "bullets": [
+          "Led the strategic <b>refactor of a metadata automation framework</b> — <b>+20%</b> faster execution, <b>+30%</b> faster test development.",
+          "Directed <b>QA best practices</b> rollout, increasing stakeholder confidence in the testing process.",
+          "Interviewed and onboarded engineers to grow the team."
+        ],
+        "tags": ["Karate", "Spinnaker", "Java", "QA Strategy"]
+      },
+      {
+        "role": "Senior Test Automation Engineer",
+        "company": "Globant",
+        "client": "Deluxe Entertainment",
+        "period": "2019 — 2023",
+        "bullets": [
+          "Designed and executed automation strategies for a <b>cluster of critical APIs and UIs</b> using Python & Selenium.",
+          "Pioneered and led new automation projects with <b>Playwright</b>.",
+          "Mentored and onboarded <b>Junior Automation Engineers</b>."
+        ],
+        "tags": ["Python", "Selenium", "Playwright", "Mentorship"]
+      },
+      {
+        "role": "Java Developer · Team Lead",
+        "company": "H.M Solutions",
+        "client": "",
+        "period": "2017 — 2019",
+        "bullets": [
+          "Led a small team building a <b>full ERP suite</b> — digital invoicing, inventory, purchases, sales and payroll — in Java."
+        ],
+        "tags": ["Java", "Team Lead", "ERP"]
+      },
+      {
+        "role": "Web Developer",
+        "company": "Ingenisoft",
+        "client": "",
+        "period": "2014 — 2016",
+        "bullets": [
+          "Built a municipal <b>public lighting management system</b> using PHP and the Google GPS API."
+        ],
+        "tags": ["PHP", "Google Maps API"]
+      }
+    ]
+  },
+  "highlights": {
+    "label": "§ 03 — Selected Projects",
+    "headingPre": "Things I'm",
+    "headingEm": "proud of.",
+    "plainHeading": "Selected Projects",
+    "items": [
+      {
+        "kicker": "AI · Accessibility",
+        "title": "Sign-language transcription model",
+        "body": "Fine-tuned a sign-language transcription model for an NGO in Argentina — early hands-on work with vision models for real-world social impact.",
+        "metaLeft": "NGO · Argentina",
+        "metaRight": "2023"
+      },
+      {
+        "kicker": "AI · Production",
+        "title": "Student-facing RAG chatbot",
+        "body": "Built and shipped a RAG system currently running in production as a student-facing chatbot for a university in Colombia.",
+        "metaLeft": "University · Colombia",
+        "metaRight": "2024"
+      },
+      {
+        "kicker": "SDET · AI Workflows",
+        "title": "Agentic dev cycle, end to end",
+        "body": "Mastered agentic AI tools across the full development cycle as an SDET — building, fixing, and orchestrating solutions across the codebase, not just filing tickets.",
+        "metaLeft": "Internal · 2024 →",
+        "metaRight": "SDET"
+      }
+    ]
+  },
+  "skills": {
+    "label": "§ 04 — Toolkit",
+    "headingPre": "What I reach for",
+    "headingEm": "first.",
+    "plainHeading": "Toolkit",
+    "note": "Honest read on where I am today — calibrated by what I touch most, not by what looks best on paper.",
+    "columns": [
+      {
+        "title": "Currently Sharp",
+        "subtitle": "/ daily, last 12 months",
+        "rows": [
+          { "name": "TypeScript / JavaScript", "level": "Daily", "bar": 92 },
+          { "name": "Playwright · WDIO 9", "level": "Daily", "bar": 94 },
+          { "name": "Agentic AI Tools", "level": "Daily Driver", "bar": 95 },
+          { "name": "GitHub Actions · CI/CD", "level": "Weekly", "bar": 84 },
+          { "name": "BrowserStack", "level": "Weekly", "bar": 78 }
+        ]
+      },
+      {
+        "title": "Recent & Confident",
+        "subtitle": "/ last 1–3 years",
+        "rows": [
+          { "name": "Python", "level": "Solid · refresher away", "bar": 78 },
+          { "name": "Selenium", "level": "Solid · ramp-back ready", "bar": 75 },
+          { "name": "Karate · API Testing", "level": "Comfortable", "bar": 72 },
+          { "name": "RAG Systems", "level": "Shipped to production", "bar": 80 },
+          { "name": "Model Fine-tuning", "level": "Applied", "bar": 70 },
+          { "name": "SQL · Data Modeling", "level": "Solid", "bar": 74 }
+        ]
+      },
+      {
+        "title": "Foundational",
+        "subtitle": "/ shipped with, will ramp",
+        "rows": [
+          { "name": "Java", "level": "Foundational", "bar": 55 },
+          { "name": "PHP", "level": "Foundational", "bar": 40 },
+          { "name": "Algorithms & Data Structures", "level": "Degree-grade", "bar": 72 },
+          { "name": "ML Modeling · Data Analysis", "level": "Applied", "bar": 68 }
+        ]
+      },
+      {
+        "title": "Leadership & Way of Working",
+        "subtitle": "",
+        "rows": [
+          { "name": "Mentoring engineers", "level": "5+ yrs", "bar": 90 },
+          { "name": "Stakeholder management", "level": "Daily", "bar": 85 },
+          { "name": "Async / remote workflow", "level": "Native", "bar": 95 },
+          { "name": "Hiring & interviewing", "level": "Disney era", "bar": 75 }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "label": "§ 05 — Education & Languages",
+    "headingPre": "Formally",
+    "headingEm": "curious.",
+    "plainHeading": "Education & Languages",
+    "degrees": [
+      {
+        "title": "Master — Data Science",
+        "school": "CEUPE",
+        "year": "2023",
+        "body": "Focused on data analysis & ML modeling — the foundation behind production RAG and fine-tuning work that followed."
+      },
+      {
+        "title": "Bachelor's Degree — Computer Science",
+        "school": "Unisabaneta",
+        "year": "2018",
+        "body": "Strength in algorithms — the backbone behind framework design and performance refactors."
+      }
+    ],
+    "languages": [
+      { "name": "Español", "level": "Native", "dots": 5, "half": false },
+      { "name": "English", "level": "Advanced · C1", "dots": 4, "half": true }
+    ],
+    "hobbies": {
+      "label": "Off-keyboard",
+      "value": "Dance · Music",
+      "dots": 4,
+      "half": false
+    }
+  },
+  "quote": {
+    "text": "I write production code, and I know how to test it. Building, automating, and optimizing is something I genuinely enjoy doing.",
+    "who": "— Juan José"
+  }
+}

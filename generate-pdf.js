@@ -3,34 +3,27 @@ const path = require('path');
 
 (async () => {
   const browser = await puppeteer.launch({
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--allow-file-access-from-files',
+    ],
   });
   const page = await browser.newPage();
-  await page.setViewport({ width: 1280, height: 1800, deviceScaleFactor: 1 });
-  const fileUrl = 'file://' + path.resolve(__dirname, 'index.html');
-
-  const pdfStyleOverrides = `
-    .reveal{opacity:1!important;transform:none!important;transition:none!important}
-    .topbar,.footer,.portrait-cap{display:none!important}
-    body{padding-bottom:0!important}
-  `;
+  await page.setViewport({ width: 1024, height: 1400, deviceScaleFactor: 1 });
+  const pdfPath = path.resolve(__dirname, 'pdf', 'index.html');
 
   for (const lang of ['en', 'es']) {
-    await page.goto(fileUrl, { waitUntil: 'networkidle0' });
-    await page.evaluate((l) => setLang(l), lang);
-    await page.addStyleTag({ content: pdfStyleOverrides });
-    await page.evaluate(() => {
-      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in'));
-    });
+    const url = 'file://' + pdfPath + '?lang=' + lang;
+    await page.goto(url, { waitUntil: 'networkidle0' });
     await page.evaluateHandle('document.fonts.ready');
-    await new Promise((r) => setTimeout(r, 600));
+    await new Promise((r) => setTimeout(r, 300));
     await page.emulateMediaType('screen');
     await page.pdf({
       path: `cv-${lang}.pdf`,
       format: 'A4',
       printBackground: true,
-      margin: { top: '8mm', bottom: '8mm', left: '8mm', right: '8mm' },
-      preferCSSPageSize: false,
+      margin: { top: '14mm', bottom: '14mm', left: '14mm', right: '14mm' },
     });
     console.log(`Generated cv-${lang}.pdf`);
   }

@@ -1,0 +1,248 @@
+{
+  "lang": "es",
+  "meta": {
+    "name": "Juan José Cano Duque",
+    "title": "Ingeniero de Software · Líder de Automatización QA · Orientado a IA.",
+    "bio": "Una década construyendo, rompiendo y automatizando sistemas en producción — desde liderar equipos de backend en Java hasta crear herramientas con IA para marcas globales. Movido por las ganas de seguir aprendiendo, entregar calidad a escala y dejar que las máquinas se encarguen de lo aburrido.",
+    "location": "Medellín · Remoto",
+    "email": "jjcadu@gmail.com",
+    "linkedin": "https://linkedin.com/in/juan-jose-cano-duque",
+    "linkedinHandle": "/juan-jose-cano-duque",
+    "availability": "Abierto a nuevas oportunidades — Disponible ahora · Remoto global · Vía EOR",
+    "portraitCaption": "Perito Moreno · Patagonia, AR"
+  },
+  "ui": {
+    "nav": {
+      "capabilities": "Capacidades",
+      "work": "Experiencia",
+      "highlights": "Proyectos",
+      "skills": "Habilidades",
+      "education": "Educación"
+    },
+    "downloadPdf": "Descargar PDF",
+    "presentLabel": "Actualidad",
+    "documentTitle": "Juan José Cano Duque — Currículum Vitae"
+  },
+  "stats": [
+    { "value": "10", "unit": "+", "label": "Años construyendo software" },
+    { "value": "5", "unit": "", "label": "Industrias · Streaming, Aviación, Finanzas, Educación, IA" },
+    { "value": "3", "unit": "", "label": "Continentes a los que he entregado · NA, EU, LATAM" },
+    { "value": "2", "unit": "", "label": "Títulos · CS y Ciencia de Datos" }
+  ],
+  "capabilities": {
+    "label": "§ 01 — Transformación Agéntica",
+    "headingPre": "Hecho para",
+    "headingEm": "transformar.",
+    "plainHeading": "Capacidades",
+    "items": [
+      {
+        "kicker": "Interno · SDLC",
+        "title": "Integrar IA agéntica en tu ciclo de desarrollo.",
+        "body": "Rediseño los loops del SDLC — dev, testing, code review, releases — sobre primitivas agénticas. Herramientas de uso diario, no demos."
+      },
+      {
+        "kicker": "Tooling · Integración",
+        "title": "Tooling hecho a la medida de tu stack.",
+        "body": "Slash commands, hooks, servidores MCP, CLIs internas. La IA evoluciona cada semana; yo la integro para que el equipo sienta la velocidad, no la fricción."
+      },
+      {
+        "kicker": "Consultoría · Entrega",
+        "title": "Transformar flujos para tus clientes.",
+        "body": "El mismo playbook, aplicado a los equipos que sirves. Me integro, entrego el cambio, y dejo flujos que siguen acumulando valor."
+      }
+    ]
+  },
+  "work": {
+    "label": "§ 02 — Experiencia Seleccionada",
+    "headingPre": "Una carrera, por",
+    "headingEm": "capas.",
+    "plainHeading": "Experiencia Seleccionada",
+    "items": [
+      {
+        "role": "Ingeniero Senior de Automatización",
+        "company": "Yuno",
+        "client": "Fintech · Híbrido · Colombia",
+        "period": "Dic 2025 — Mar 2026",
+        "bullets": [
+          "<b>Desarrollo aumentado por IA:</b> ejecuté flujos de alto impacto dentro de un exigente <b>entorno de IA agéntica</b> al servicio de la industria financiera internacional.",
+          "<b>Optimización del SDLC con agentes:</b> usé agentes de IA como interfaz principal en todo el ciclo de vida del software — construcción, testing, debugging y resolución rápida de incidentes.",
+          "<b>Entrega de features con agentes:</b> implementé nuevas funcionalidades orquestando herramientas de agentes de IA para mantener velocidad y precisión en un entorno complejo.",
+          "<b>Resiliencia técnica:</b> me desempeñé en un entorno de alta presión y ritmo acelerado, cumpliendo los rigurosos <b>estándares de seguridad y rendimiento</b> del sector fintech global."
+        ],
+        "tags": ["IA Agéntica", "Fintech", "Automatización SDLC", "Tooling Agéntico", "QA de alta velocidad"]
+      },
+      {
+        "role": "Líder de Automatización QA",
+        "company": "Globant",
+        "client": "British Airways",
+        "period": "2024 — 2025",
+        "bullets": [
+          "Diseñé e implementé un nuevo <b>framework de pruebas de UI</b> para un producto aeronáutico complejo y multi-equipo.",
+          "Actué como <b>punto focal de QA</b>, liderando la integración y las relaciones con stakeholders entre múltiples equipos.",
+          "Mejoré integraciones entre <b>GitHub Actions, BrowserStack, WDIO 9</b> y librerías internas.",
+          "Ya integraba <b>herramientas de IA</b> en flujos de QA antes de que fuera la corriente principal."
+        ],
+        "tags": ["WDIO 9", "TypeScript", "BrowserStack", "GitHub Actions", "Tooling de IA"]
+      },
+      {
+        "role": "Ingeniero Senior de Automatización",
+        "company": "Globant",
+        "client": "Disney Streaming",
+        "period": "2023 — 2024",
+        "bullets": [
+          "Lideré el <b>refactor estratégico</b> de un framework de automatización de metadatos — <b>+20%</b> más rápido en ejecución, <b>+30%</b> en velocidad de escritura de pruebas.",
+          "Dirigí la implementación de <b>buenas prácticas de QA</b>, aumentando la confianza de los stakeholders en el proceso.",
+          "Entrevisté y onboardé ingenieros para hacer crecer el equipo."
+        ],
+        "tags": ["Karate", "Spinnaker", "Java", "Estrategia QA"]
+      },
+      {
+        "role": "Ingeniero Senior de Automatización",
+        "company": "Globant",
+        "client": "Deluxe Entertainment",
+        "period": "2019 — 2023",
+        "bullets": [
+          "Diseñé y ejecuté estrategias de automatización para un <b>cluster crítico de APIs y UIs</b> con Python y Selenium.",
+          "Pionero y líder de nuevos proyectos de automatización con <b>Playwright</b>.",
+          "Mentoricé y onboardé <b>ingenieros junior de automatización</b>."
+        ],
+        "tags": ["Python", "Selenium", "Playwright", "Mentoría"]
+      },
+      {
+        "role": "Desarrollador Java · Líder de Equipo",
+        "company": "H.M Solutions",
+        "client": "",
+        "period": "2017 — 2019",
+        "bullets": [
+          "Lideré un equipo pequeño construyendo un <b>ERP completo</b> — facturación digital, inventario, compras, ventas y nómina — en Java."
+        ],
+        "tags": ["Java", "Líder de Equipo", "ERP"]
+      },
+      {
+        "role": "Desarrollador Web",
+        "company": "Ingenisoft",
+        "client": "",
+        "period": "2014 — 2016",
+        "bullets": [
+          "Construí un sistema municipal de <b>gestión de alumbrado público</b> usando PHP y la API de Google GPS."
+        ],
+        "tags": ["PHP", "Google Maps API"]
+      }
+    ]
+  },
+  "highlights": {
+    "label": "§ 03 — Proyectos Seleccionados",
+    "headingPre": "Cosas de las que",
+    "headingEm": "me enorgullezco.",
+    "plainHeading": "Proyectos Seleccionados",
+    "items": [
+      {
+        "kicker": "IA · Accesibilidad",
+        "title": "Modelo de transcripción de lengua de signos",
+        "body": "Realicé fine-tuning de un modelo de transcripción de lengua de signos para una ONG en Argentina — trabajo temprano y práctico con modelos de visión y un impacto social real.",
+        "metaLeft": "ONG · Argentina",
+        "metaRight": "2023"
+      },
+      {
+        "kicker": "IA · Producción",
+        "title": "Chatbot RAG para estudiantes",
+        "body": "Construí y desplegué un sistema RAG actualmente en producción como chatbot para estudiantes de una universidad en Colombia.",
+        "metaLeft": "Universidad · Colombia",
+        "metaRight": "2024"
+      },
+      {
+        "kicker": "SDET · Flujos con IA",
+        "title": "Ciclo agéntico de desarrollo, de punta a punta",
+        "body": "Dominé herramientas agénticas de IA en todo el ciclo de desarrollo como SDET — construyendo, corrigiendo y orquestando soluciones a lo largo del código, no solo abriendo tickets.",
+        "metaLeft": "Interno · 2024 →",
+        "metaRight": "SDET"
+      }
+    ]
+  },
+  "skills": {
+    "label": "§ 04 — Caja de Herramientas",
+    "headingPre": "Lo que uso",
+    "headingEm": "primero.",
+    "plainHeading": "Caja de Herramientas",
+    "note": "Una lectura honesta de dónde estoy hoy — calibrada por lo que toco más, no por lo que mejor se ve en papel.",
+    "columns": [
+      {
+        "title": "Afilado ahora",
+        "subtitle": "/ uso diario, últimos 12 meses",
+        "rows": [
+          { "name": "TypeScript / JavaScript", "level": "Diario", "bar": 92 },
+          { "name": "Playwright · WDIO 9", "level": "Diario", "bar": 94 },
+          { "name": "Agentic AI Tools", "level": "Mi herramienta diaria", "bar": 95 },
+          { "name": "GitHub Actions · CI/CD", "level": "Semanal", "bar": 84 },
+          { "name": "BrowserStack", "level": "Semanal", "bar": 78 }
+        ]
+      },
+      {
+        "title": "Reciente y con confianza",
+        "subtitle": "/ últimos 1–3 años",
+        "rows": [
+          { "name": "Python", "level": "Sólido · a un repaso de distancia", "bar": 78 },
+          { "name": "Selenium", "level": "Sólido · listo para retomar", "bar": 75 },
+          { "name": "Karate · API Testing", "level": "Cómodo", "bar": 72 },
+          { "name": "RAG Systems", "level": "En producción", "bar": 80 },
+          { "name": "Model Fine-tuning", "level": "Aplicado", "bar": 70 },
+          { "name": "SQL · Modelado de Datos", "level": "Sólido", "bar": 74 }
+        ]
+      },
+      {
+        "title": "Fundacional",
+        "subtitle": "/ ya envié con esto, listo para retomar",
+        "rows": [
+          { "name": "Java", "level": "Fundacional", "bar": 55 },
+          { "name": "PHP", "level": "Fundacional", "bar": 40 },
+          { "name": "Algoritmos y Estructuras de Datos", "level": "Nivel académico", "bar": 72 },
+          { "name": "Modelado ML · Análisis de Datos", "level": "Aplicado", "bar": 68 }
+        ]
+      },
+      {
+        "title": "Liderazgo y Forma de Trabajar",
+        "subtitle": "",
+        "rows": [
+          { "name": "Mentoría de ingenieros", "level": "5+ años", "bar": 90 },
+          { "name": "Gestión de stakeholders", "level": "Diario", "bar": 85 },
+          { "name": "Flujo async / remoto", "level": "Nativo", "bar": 95 },
+          { "name": "Contratación y entrevistas", "level": "Época Disney", "bar": 75 }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "label": "§ 05 — Educación e Idiomas",
+    "headingPre": "Formalmente",
+    "headingEm": "curioso.",
+    "plainHeading": "Educación e Idiomas",
+    "degrees": [
+      {
+        "title": "Máster — Ciencia de Datos",
+        "school": "CEUPE",
+        "year": "2023",
+        "body": "Enfocado en análisis de datos y modelado ML — la base detrás del trabajo posterior en RAG en producción y fine-tuning."
+      },
+      {
+        "title": "Pregrado — Ingeniería de Sistemas",
+        "school": "Unisabaneta",
+        "year": "2018",
+        "body": "Fuerte en algoritmos — la columna vertebral del diseño de frameworks y los refactors de rendimiento."
+      }
+    ],
+    "languages": [
+      { "name": "Español", "level": "Nativo", "dots": 5, "half": false },
+      { "name": "English", "level": "Avanzado · C1", "dots": 4, "half": true }
+    ],
+    "hobbies": {
+      "label": "Fuera del teclado",
+      "value": "Baile · Música",
+      "dots": 4,
+      "half": false
+    }
+  },
+  "quote": {
+    "text": "Escribo código en producción y sé cómo probarlo. Construir, automatizar y optimizar es algo que disfruto genuinamente.",
+    "who": "— Juan José"
+  }
+}
