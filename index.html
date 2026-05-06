@@ -510,6 +510,8 @@
       <a id="foot-email" href="#"></a>
       <span style="opacity:.4">·</span>
       <a id="foot-linkedin" href="#" target="_blank" rel="noopener"></a>
+      <span style="opacity:.4">·</span>
+      <a id="foot-github" href="#" target="_blank" rel="noopener"></a>
     </div>
     <div class="foot-actions">
       <div class="toggle" role="group" aria-label="Language">
@@ -694,6 +696,9 @@ function renderFooter(data){
   const ln = document.getElementById('foot-linkedin');
   ln.href = data.meta.linkedin;
   ln.textContent = data.meta.linkedinHandle;
+  const gh = document.getElementById('foot-github');
+  gh.href = data.meta.github;
+  gh.textContent = data.meta.githubHandle;
   document.getElementById('pdf-label').textContent = data.ui.downloadPdf;
 }
 

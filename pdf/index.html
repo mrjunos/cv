@@ -145,6 +145,7 @@
   document.getElementById('contact').innerHTML =
     '<a href="mailto:' + data.meta.email + '">' + data.meta.email + '</a>'
     + ' · <a href="' + data.meta.linkedin + '">' + data.meta.linkedinHandle + '</a>'
+    + ' · <a href="' + data.meta.github + '">' + data.meta.githubHandle + '</a>'
     + ' · ' + data.meta.location;
   setText('availability', data.meta.availability);
   setHTML('bio', data.meta.bio);
