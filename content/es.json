@@ -124,9 +124,9 @@
         "client": "",
         "period": "2014 — 2016",
         "bullets": [
-          "Construí un sistema municipal de <b>gestión de alumbrado público</b> usando PHP y la API de Google GPS."
+          "Construí un sistema municipal de <b>gestión de alumbrado público</b> usando la API de Google GPS."
         ],
-        "tags": ["PHP", "Google Maps API"]
+        "tags": ["Google Maps API"]
       }
     ]
   },
@@ -170,9 +170,9 @@
         "title": "Afilado ahora",
         "subtitle": "/ uso diario, últimos 12 meses",
         "rows": [
+          { "name": "Agentic AI Tools", "level": "Mi herramienta diaria", "bar": 95 },
           { "name": "TypeScript / JavaScript", "level": "Diario", "bar": 92 },
           { "name": "Playwright · WDIO 9", "level": "Diario", "bar": 94 },
-          { "name": "Agentic AI Tools", "level": "Mi herramienta diaria", "bar": 95 },
           { "name": "GitHub Actions · CI/CD", "level": "Semanal", "bar": 84 },
           { "name": "BrowserStack", "level": "Semanal", "bar": 78 }
         ]
@@ -194,7 +194,6 @@
         "subtitle": "/ ya envié con esto, listo para retomar",
         "rows": [
           { "name": "Java", "level": "Fundacional", "bar": 55 },
-          { "name": "PHP", "level": "Fundacional", "bar": 40 },
           { "name": "Algoritmos y Estructuras de Datos", "level": "Nivel académico", "bar": 72 },
           { "name": "Modelado ML · Análisis de Datos", "level": "Aplicado", "bar": 68 }
         ]
@@ -206,7 +205,8 @@
           { "name": "Mentoría de ingenieros", "level": "5+ años", "bar": 90 },
           { "name": "Gestión de stakeholders", "level": "Diario", "bar": 85 },
           { "name": "Flujo async / remoto", "level": "Nativo", "bar": 95 },
-          { "name": "Contratación y entrevistas", "level": "Época Disney", "bar": 75 }
+          { "name": "Contratación y entrevistas", "level": "Época Disney", "bar": 75 },
+          { "name": "Punto focal de framework QA", "level": "20+ SDETs activos", "bar": 88 }
         ]
       }
     ]

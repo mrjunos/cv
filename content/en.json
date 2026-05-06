@@ -124,9 +124,9 @@
         "client": "",
         "period": "2014 — 2016",
         "bullets": [
-          "Built a municipal <b>public lighting management system</b> using PHP and the Google GPS API."
+          "Built a municipal <b>public lighting management system</b> using the Google GPS API."
         ],
-        "tags": ["PHP", "Google Maps API"]
+        "tags": ["Google Maps API"]
       }
     ]
   },
@@ -170,9 +170,9 @@
         "title": "Currently Sharp",
         "subtitle": "/ daily, last 12 months",
         "rows": [
+          { "name": "Agentic AI Tools", "level": "Daily Driver", "bar": 95 },
           { "name": "TypeScript / JavaScript", "level": "Daily", "bar": 92 },
           { "name": "Playwright · WDIO 9", "level": "Daily", "bar": 94 },
-          { "name": "Agentic AI Tools", "level": "Daily Driver", "bar": 95 },
           { "name": "GitHub Actions · CI/CD", "level": "Weekly", "bar": 84 },
           { "name": "BrowserStack", "level": "Weekly", "bar": 78 }
         ]
@@ -194,7 +194,6 @@
         "subtitle": "/ shipped with, will ramp",
         "rows": [
           { "name": "Java", "level": "Foundational", "bar": 55 },
-          { "name": "PHP", "level": "Foundational", "bar": 40 },
           { "name": "Algorithms & Data Structures", "level": "Degree-grade", "bar": 72 },
           { "name": "ML Modeling · Data Analysis", "level": "Applied", "bar": 68 }
         ]
@@ -206,7 +205,8 @@
           { "name": "Mentoring engineers", "level": "5+ yrs", "bar": 90 },
           { "name": "Stakeholder management", "level": "Daily", "bar": 85 },
           { "name": "Async / remote workflow", "level": "Native", "bar": 95 },
-          { "name": "Hiring & interviewing", "level": "Disney era", "bar": 75 }
+          { "name": "Hiring & interviewing", "level": "Disney era", "bar": 75 },
+          { "name": "QA framework focal point", "level": "20+ active SDETs", "bar": 88 }
         ]
       }
     ]
