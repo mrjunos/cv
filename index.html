@@ -420,6 +420,7 @@
   <div class="topbar-inner">
     <span class="mono">JJC · CV · 2026</span>
     <nav>
+      <a href="#capabilities" data-i="nav.capabilities">Capabilities</a>
       <a href="#work" data-i="nav.work">Work</a>
       <a href="#highlights" data-i="nav.highlights">Highlights</a>
       <a href="#skills" data-i="nav.skills">Skills</a>
@@ -469,10 +470,38 @@
   </div>
 </div>
 
+<!-- ===================== CAPABILITIES ===================== -->
+<section id="capabilities">
+  <div class="section-head">
+    <div class="label" data-i="cap.label">§ 01 — Agentic Transformation</div>
+    <h2><span data-i="cap.h2a">Built for</span> <em data-i="cap.h2b">transformation.</em></h2>
+  </div>
+
+  <div class="grid-3">
+    <article class="card">
+      <span class="kicker" data-i="cap1.k">In-house · SDLC</span>
+      <h4 data-i="cap1.t">Embed agentic AI across your dev cycle.</h4>
+      <p data-i="cap1.p">Rewire SDLC loops — dev, testing, code review, releases — around agentic primitives. Daily drivers, not pilot decks.</p>
+    </article>
+
+    <article class="card">
+      <span class="kicker" data-i="cap2.k">Tooling · Integration</span>
+      <h4 data-i="cap2.t">Build the tools that fit your stack.</h4>
+      <p data-i="cap2.p">Slash commands, hooks, MCP servers, internal CLIs. New AI tech ships weekly; I integrate it so the team feels the speed, not the friction.</p>
+    </article>
+
+    <article class="card">
+      <span class="kicker" data-i="cap3.k">Consulting · Delivery</span>
+      <h4 data-i="cap3.t">Transform workflows for your customers.</h4>
+      <p data-i="cap3.p">Same playbook, applied to the teams you serve. Embed, ship the change, leave behind workflows that compound.</p>
+    </article>
+  </div>
+</section>
+
 <!-- ===================== WORK ===================== -->
 <section id="work">
   <div class="section-head">
-    <div class="label" data-i="work.label">§ 01 — Selected Work</div>
+    <div class="label" data-i="work.label">§ 02 — Selected Work</div>
     <h2><span data-i="work.h2a">A career, in</span> <em data-i="work.h2b">layers.</em></h2>
   </div>
 
@@ -578,7 +607,7 @@
 <!-- ===================== HIGHLIGHTS ===================== -->
 <section id="highlights">
   <div class="section-head">
-    <div class="label" data-i="hl.label">§ 02 — Selected Projects</div>
+    <div class="label" data-i="hl.label">§ 03 — Selected Projects</div>
     <h2><span data-i="hl.h2a">Things I'm</span> <em data-i="hl.h2b">proud of.</em></h2>
   </div>
 
@@ -609,7 +638,7 @@
 <!-- ===================== SKILLS ===================== -->
 <section id="skills">
   <div class="section-head">
-    <div class="label" data-i="sk.label">§ 03 — Toolkit</div>
+    <div class="label" data-i="sk.label">§ 04 — Toolkit</div>
     <h2><span data-i="sk.h2a">What I reach for</span> <em data-i="sk.h2b">first.</em></h2>
   </div>
 
@@ -656,7 +685,7 @@
 <!-- ===================== EDUCATION + LANG ===================== -->
 <section id="education">
   <div class="section-head">
-    <div class="label" data-i="ed.label">§ 04 — Education &amp; Languages</div>
+    <div class="label" data-i="ed.label">§ 05 — Education &amp; Languages</div>
     <h2><span data-i="ed.h2a">Formally</span> <em data-i="ed.h2b">curious.</em></h2>
   </div>
 
@@ -732,7 +761,7 @@
 /* ============== I18N ============== */
 const I18N = {
   en: {
-    "nav.work":"Work","nav.highlights":"Highlights","nav.skills":"Skills","nav.education":"Education",
+    "nav.capabilities":"Capabilities","nav.work":"Work","nav.highlights":"Highlights","nav.skills":"Skills","nav.education":"Education",
     "topbar.loc":"Medellín · Remote",
     "hero.eyebrow":"Open to new opportunities — Available now",
     "hero.role":"Software Engineer · QA Automation Lead · AI Driven.",
@@ -743,7 +772,16 @@ const I18N = {
     "stat.velocity":"Continents shipped to · NA, EU, LATAM",
     "stat.degrees":"Degrees · CS & Data Science",
 
-    "work.label":"§ 01 — Selected Work",
+    "cap.label":"§ 01 — Agentic Transformation",
+    "cap.h2a":"Built for","cap.h2b":"transformation.",
+    "cap1.k":"In-house · SDLC","cap1.t":"Embed agentic AI across your dev cycle.",
+    "cap1.p":"Rewire SDLC loops — dev, testing, code review, releases — around agentic primitives. Daily drivers, not pilot decks.",
+    "cap2.k":"Tooling · Integration","cap2.t":"Build the tools that fit your stack.",
+    "cap2.p":"Slash commands, hooks, MCP servers, internal CLIs. New AI tech ships weekly; I integrate it so the team feels the speed, not the friction.",
+    "cap3.k":"Consulting · Delivery","cap3.t":"Transform workflows for your customers.",
+    "cap3.p":"Same playbook, applied to the teams you serve. Embed, ship the change, leave behind workflows that compound.",
+
+    "work.label":"§ 02 — Selected Work",
     "work.h2a":"A career, in","work.h2b":"layers.",
     "xp.now":"Present",
     "xp1.role":"QA Automation Lead","xp1.client":"British Airways",
@@ -769,7 +807,7 @@ const I18N = {
     "xp5.role":"Web Developer",
     "xp5.b1":"Built a municipal <b>public lighting management system</b> using PHP and the Google GPS API.",
 
-    "hl.label":"§ 02 — Selected Projects",
+    "hl.label":"§ 03 — Selected Projects",
     "hl.h2a":"Things I'm","hl.h2b":"proud of.",
     "hl1.k":"AI · Accessibility","hl1.t":"Sign-language transcription model",
     "hl1.p":"Fine-tuned a sign-language transcription model for an NGO in Argentina — early hands-on work with vision models for real-world social impact.",
@@ -781,7 +819,7 @@ const I18N = {
     "hl3.p":"Mastered agentic AI tools across the full development cycle as an SDET — building, fixing, and orchestrating solutions across the codebase, not just filing tickets.",
     "hl3.m1":"Internal · 2024 →","hl3.m2":"SDET",
 
-    "sk.label":"§ 03 — Toolkit",
+    "sk.label":"§ 04 — Toolkit",
     "sk.h2a":"What I reach for","sk.h2b":"first.",
     "sk.note":"Honest read on where I am today — calibrated by what I touch most, not by what looks best on paper.",
     "sk.now":"Currently Sharp <span class=\"sk-sub\">/ daily, last 12 months</span>",
@@ -799,7 +837,7 @@ const I18N = {
     "sk.lvl.5y":"5+ yrs","sk.lvl.native":"Native","sk.lvl.disney":"Disney era",
     "sk.l1":"Mentoring engineers","sk.l2":"Stakeholder management","sk.l3":"Async / remote workflow","sk.l4":"Hiring &amp; interviewing",
 
-    "ed.label":"§ 04 — Education & Languages",
+    "ed.label":"§ 05 — Education & Languages",
     "ed.h2a":"Formally","ed.h2b":"curious.",
     "ed1.t":"Master — Data Science",
     "ed1.p":"Focused on data analysis & ML modeling — the foundation behind production RAG and fine-tuning work that followed.",
@@ -814,7 +852,7 @@ const I18N = {
     "pdf":"Download PDF"
   },
   es: {
-    "nav.work":"Experiencia","nav.highlights":"Proyectos","nav.skills":"Habilidades","nav.education":"Educación",
+    "nav.capabilities":"Capacidades","nav.work":"Experiencia","nav.highlights":"Proyectos","nav.skills":"Habilidades","nav.education":"Educación",
     "topbar.loc":"Medellín · Remoto",
     "hero.eyebrow":"Abierto a nuevas oportunidades — Disponible ahora",
     "hero.role":"Ingeniero de Software · Líder de Automatización QA · Orientado a IA.",
@@ -825,7 +863,16 @@ const I18N = {
     "stat.velocity":"Continentes a los que he entregado · NA, EU, LATAM",
     "stat.degrees":"Títulos · CS y Ciencia de Datos",
 
-    "work.label":"§ 01 — Experiencia Seleccionada",
+    "cap.label":"§ 01 — Transformación Agéntica",
+    "cap.h2a":"Hecho para","cap.h2b":"transformar.",
+    "cap1.k":"Interno · SDLC","cap1.t":"Integrar IA agéntica en tu ciclo de desarrollo.",
+    "cap1.p":"Rediseño los loops del SDLC — dev, testing, code review, releases — sobre primitivas agénticas. Herramientas de uso diario, no demos.",
+    "cap2.k":"Tooling · Integración","cap2.t":"Tooling hecho a la medida de tu stack.",
+    "cap2.p":"Slash commands, hooks, servidores MCP, CLIs internas. La IA evoluciona cada semana; yo la integro para que el equipo sienta la velocidad, no la fricción.",
+    "cap3.k":"Consultoría · Entrega","cap3.t":"Transformar flujos para tus clientes.",
+    "cap3.p":"El mismo playbook, aplicado a los equipos que sirves. Me integro, entrego el cambio, y dejo flujos que siguen acumulando valor.",
+
+    "work.label":"§ 02 — Experiencia Seleccionada",
     "work.h2a":"Una carrera, por","work.h2b":"capas.",
     "xp.now":"Actualidad",
     "xp1.role":"Líder de Automatización QA","xp1.client":"British Airways",
@@ -851,7 +898,7 @@ const I18N = {
     "xp5.role":"Desarrollador Web",
     "xp5.b1":"Construí un sistema municipal de <b>gestión de alumbrado público</b> usando PHP y la API de Google GPS.",
 
-    "hl.label":"§ 02 — Proyectos Seleccionados",
+    "hl.label":"§ 03 — Proyectos Seleccionados",
     "hl.h2a":"Cosas de las que","hl.h2b":"me enorgullezco.",
     "hl1.k":"IA · Accesibilidad","hl1.t":"Modelo de transcripción de lengua de signos",
     "hl1.p":"Realicé fine-tuning de un modelo de transcripción de lengua de signos para una ONG en Argentina — trabajo temprano y práctico con modelos de visión y un impacto social real.",
@@ -863,7 +910,7 @@ const I18N = {
     "hl3.p":"Dominé herramientas agénticas de IA en todo el ciclo de desarrollo como SDET — construyendo, corrigiendo y orquestando soluciones a lo largo del código, no solo abriendo tickets.",
     "hl3.m1":"Interno · 2024 →","hl3.m2":"SDET",
 
-    "sk.label":"§ 03 — Caja de Herramientas",
+    "sk.label":"§ 04 — Caja de Herramientas",
     "sk.h2a":"Lo que uso","sk.h2b":"primero.",
     "sk.note":"Una lectura honesta de dónde estoy hoy — calibrada por lo que toco más, no por lo que mejor se ve en papel.",
     "sk.now":"Afilado ahora <span class=\"sk-sub\">/ uso diario, últimos 12 meses</span>",
@@ -881,7 +928,7 @@ const I18N = {
     "sk.lvl.5y":"5+ años","sk.lvl.native":"Nativo","sk.lvl.disney":"Época Disney",
     "sk.l1":"Mentoría de ingenieros","sk.l2":"Gestión de stakeholders","sk.l3":"Flujo async / remoto","sk.l4":"Contratación y entrevistas",
 
-    "ed.label":"§ 04 — Educación e Idiomas",
+    "ed.label":"§ 05 — Educación e Idiomas",
     "ed.h2a":"Formalmente","ed.h2b":"curioso.",
     "ed1.t":"Máster — Ciencia de Datos",
     "ed1.p":"Enfocado en análisis de datos y modelado ML — la base detrás del trabajo posterior en RAG en producción y fine-tuning.",
