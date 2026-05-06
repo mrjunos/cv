@@ -94,7 +94,7 @@
           "Directed <b>QA best practices</b> rollout, increasing stakeholder confidence in the testing process.",
           "Interviewed and onboarded engineers to grow the team."
         ],
-        "tags": ["Karate", "Spinnaker", "Java", "QA Strategy"]
+        "tags": ["Spinnaker", "Java", "QA Strategy"]
       },
       {
         "role": "Senior Test Automation Engineer",
@@ -183,7 +183,7 @@
         "rows": [
           { "name": "Python", "level": "Solid · refresher away", "bar": 78 },
           { "name": "Selenium", "level": "Solid · ramp-back ready", "bar": 75 },
-          { "name": "Karate · API Testing", "level": "Comfortable", "bar": 72 },
+          { "name": "API Testing", "level": "Comfortable", "bar": 72 },
           { "name": "RAG Systems", "level": "Shipped to production", "bar": 80 },
           { "name": "Model Fine-tuning", "level": "Applied", "bar": 70 },
           { "name": "SQL · Data Modeling", "level": "Solid", "bar": 74 }

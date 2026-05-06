@@ -94,7 +94,7 @@
           "Dirigí la implementación de <b>buenas prácticas de QA</b>, aumentando la confianza de los stakeholders en el proceso.",
           "Entrevisté y onboardé ingenieros para hacer crecer el equipo."
         ],
-        "tags": ["Karate", "Spinnaker", "Java", "Estrategia QA"]
+        "tags": ["Spinnaker", "Java", "Estrategia QA"]
       },
       {
         "role": "Ingeniero Senior de Automatización",
@@ -183,7 +183,7 @@
         "rows": [
           { "name": "Python", "level": "Sólido · a un repaso de distancia", "bar": 78 },
           { "name": "Selenium", "level": "Sólido · listo para retomar", "bar": 75 },
-          { "name": "Karate · API Testing", "level": "Cómodo", "bar": 72 },
+          { "name": "API Testing", "level": "Cómodo", "bar": 72 },
           { "name": "RAG Systems", "level": "En producción", "bar": 80 },
           { "name": "Model Fine-tuning", "level": "Aplicado", "bar": 70 },
           { "name": "SQL · Modelado de Datos", "level": "Sólido", "bar": 74 }
