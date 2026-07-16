@@ -13,7 +13,7 @@ const path = require('path');
   await page.setViewport({ width: 1024, height: 1400, deviceScaleFactor: 1 });
   const pdfPath = path.resolve(__dirname, 'pdf', 'index.html');
 
-  for (const lang of ['en', 'es']) {
+  for (const lang of ['en', 'es', 'en-ai', 'es-ai']) {
     const url = 'file://' + pdfPath + '?lang=' + lang;
     await page.goto(url, { waitUntil: 'networkidle0' });
     await page.evaluateHandle('document.fonts.ready');

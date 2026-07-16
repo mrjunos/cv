@@ -1,0 +1,257 @@
+{
+  "lang": "es",
+  "meta": {
+    "name": "Juan José Cano Duque",
+    "title": "Ingeniero de IA · RAG, Sistemas Agénticos y Evals de LLM.",
+    "bio": "Una década de ingeniería de software en producción, ahora apuntada a sistemas de IA: RAG desplegado en producción, flujos agénticos como herramienta diaria, y harnesses de evaluación que prueban que los sistemas LLM realmente funcionan — antes de que los usuarios descubran que no.",
+    "location": "Medellín · Remoto",
+    "email": "jjcadu@gmail.com",
+    "linkedin": "https://linkedin.com/in/juan-jose-cano-duque",
+    "linkedinHandle": "/juan-jose-cano-duque",
+    "github": "https://github.com/mrjunos",
+    "githubHandle": "/mrjunos",
+    "availability": "Abierto a nuevas oportunidades — Disponible ahora · Remoto global · Vía EOR",
+    "portraitCaption": "Perito Moreno · Patagonia, AR"
+  },
+  "ui": {
+    "nav": {
+      "capabilities": "Capacidades",
+      "work": "Experiencia",
+      "highlights": "Proyectos",
+      "skills": "Habilidades",
+      "education": "Educación"
+    },
+    "downloadPdf": "Descargar PDF",
+    "presentLabel": "Actualidad",
+    "documentTitle": "Juan José Cano Duque — Currículum Vitae"
+  },
+  "stats": [
+    { "value": "10", "unit": "+", "label": "Años construyendo software" },
+    { "value": "5", "unit": "", "label": "Industrias · Streaming, Aviación, Finanzas, Educación, IA" },
+    { "value": "3", "unit": "", "label": "Continentes a los que he entregado · NA, EU, LATAM" },
+    { "value": "2", "unit": "", "label": "Títulos · CS y Ciencia de Datos" }
+  ],
+  "capabilities": {
+    "label": "§ 01 — Sistemas de IA",
+    "headingPre": "Hecho para",
+    "headingEm": "IA en producción.",
+    "plainHeading": "Capacidades",
+    "items": [
+      {
+        "kicker": "RAG · Producción",
+        "title": "Sistemas RAG que sobreviven a producción.",
+        "body": "Sistemas de retrieval de punta a punta — chunking, optimización de retrieval, enrutamiento de documentos, guardrails. Uno corre hoy en producción, sirviendo a estudiantes universitarios."
+      },
+      {
+        "kicker": "Evals · Confiabilidad",
+        "title": "Probar que el sistema LLM realmente funciona.",
+        "body": "Métricas de retrieval con umbrales duros (recall, precision, MRR), LLM-as-judge calibrado contra etiquetas humanas, suites de red-teaming para inyección y exfiltración — determinista en CI vía record/replay."
+      },
+      {
+        "kicker": "Agéntico · Orquestación",
+        "title": "Agentes conectados a flujos reales.",
+        "body": "Pipelines multi-agente, tool use y servidores MCP, estrategias de memoria, hooks y CLIs internas — primitivas agénticas como herramientas diarias en todo el SDLC, no demos."
+      }
+    ]
+  },
+  "work": {
+    "label": "§ 02 — Experiencia Seleccionada",
+    "headingPre": "Una carrera, por",
+    "headingEm": "capas.",
+    "plainHeading": "Experiencia Seleccionada",
+    "items": [
+      {
+        "role": "Ingeniero Senior de Automatización",
+        "company": "Yuno",
+        "client": "Fintech · Híbrido · Colombia",
+        "period": "Dic 2025 — Mar 2026",
+        "bullets": [
+          "<b>Desarrollo aumentado por IA:</b> ejecuté flujos de alto impacto dentro de un exigente <b>entorno de IA agéntica</b> al servicio de la industria financiera internacional.",
+          "<b>Optimización del SDLC con agentes:</b> usé agentes de IA como interfaz principal en todo el ciclo de vida del software — construcción, testing, debugging y resolución rápida de incidentes.",
+          "<b>Entrega de features con agentes:</b> implementé nuevas funcionalidades orquestando herramientas de agentes de IA para mantener velocidad y precisión en un entorno complejo.",
+          "<b>Resiliencia técnica:</b> me desempeñé en un entorno de alta presión y ritmo acelerado, cumpliendo los rigurosos <b>estándares de seguridad y rendimiento</b> del sector fintech global."
+        ],
+        "tags": ["IA Agéntica", "Fintech", "Automatización SDLC", "Tooling Agéntico", "QA de alta velocidad"]
+      },
+      {
+        "role": "Líder de Automatización QA",
+        "company": "Globant",
+        "client": "British Airways",
+        "period": "2024 — 2025",
+        "bullets": [
+          "Ya integraba <b>herramientas de IA</b> en flujos de ingeniería antes de que fuera la corriente principal.",
+          "Diseñé e implementé un nuevo <b>framework de pruebas de UI</b> para un producto aeronáutico complejo y multi-equipo.",
+          "Actué como <b>punto focal de QA</b>, liderando la integración y las relaciones con stakeholders entre múltiples equipos.",
+          "Mejoré integraciones entre <b>GitHub Actions, BrowserStack, WDIO 9</b> y librerías internas."
+        ],
+        "tags": ["Tooling de IA", "WDIO 9", "TypeScript", "BrowserStack", "GitHub Actions"]
+      },
+      {
+        "role": "Ingeniero Senior de Automatización",
+        "company": "Globant",
+        "client": "Disney Streaming",
+        "period": "2023 — 2024",
+        "bullets": [
+          "Lideré el <b>refactor estratégico</b> de un framework de automatización de metadatos — <b>+20%</b> más rápido en ejecución, <b>+30%</b> en velocidad de escritura de pruebas.",
+          "Dirigí la implementación de <b>buenas prácticas de QA</b>, aumentando la confianza de los stakeholders en el proceso.",
+          "Entrevisté y onboardé ingenieros para hacer crecer el equipo."
+        ],
+        "tags": ["Spinnaker", "Java", "Estrategia QA"]
+      },
+      {
+        "role": "Ingeniero Senior de Automatización",
+        "company": "Globant",
+        "client": "Deluxe Entertainment",
+        "period": "2019 — 2023",
+        "bullets": [
+          "Diseñé y ejecuté estrategias de automatización para un <b>cluster crítico de APIs y UIs</b> con Python y Selenium.",
+          "Pionero y líder de nuevos proyectos de automatización con <b>Playwright</b>.",
+          "Mentoricé y onboardé <b>ingenieros junior de automatización</b>."
+        ],
+        "tags": ["Python", "Selenium", "Playwright", "Mentoría"]
+      },
+      {
+        "role": "Desarrollador Java · Líder de Equipo",
+        "company": "H.M Solutions",
+        "client": "",
+        "period": "2017 — 2019",
+        "bullets": [
+          "Lideré un equipo pequeño construyendo un <b>ERP completo</b> — facturación digital, inventario, compras, ventas y nómina — en Java."
+        ],
+        "tags": ["Java", "Líder de Equipo", "ERP"]
+      },
+      {
+        "role": "Desarrollador Web",
+        "company": "Ingenisoft",
+        "client": "",
+        "period": "2014 — 2016",
+        "bullets": [
+          "Construí un sistema municipal de <b>gestión de alumbrado público</b> usando PHP y la API de Google GPS."
+        ],
+        "tags": ["PHP", "Google Maps API"]
+      }
+    ]
+  },
+  "highlights": {
+    "label": "§ 03 — Trabajo Seleccionado en IA",
+    "headingPre": "Cosas de las que",
+    "headingEm": "me enorgullezco.",
+    "plainHeading": "Trabajo Seleccionado en IA",
+    "items": [
+      {
+        "kicker": "Evals · Open Source",
+        "title": "Harness de evaluación de LLMs",
+        "body": "Estrategia de evaluación de 3 capas para sistemas RAG: métricas de retrieval con umbrales duros, un juez LLM calibrado al <b>100% de acuerdo con etiquetas humanas</b>, y una suite adversarial de red-teaming (12/12) — todo determinista en CI vía record/replay. Público: github.com/mrjunos/llm-eval-harness",
+        "metaLeft": "Open source · Python",
+        "metaRight": "2026"
+      },
+      {
+        "kicker": "IA · Producción",
+        "title": "Chatbot RAG para estudiantes",
+        "body": "Construí y desplegué un sistema RAG actualmente en producción como chatbot para estudiantes de una universidad en Colombia.",
+        "metaLeft": "Universidad · Colombia",
+        "metaRight": "2024"
+      },
+      {
+        "kicker": "IA · Producto",
+        "title": "Compass — asistente RAG de documentos",
+        "body": "Producto RAG self-hosted construido de punta a punta: backend FastAPI, retrieval basado en razonamiento (PageIndex), enrutamiento inteligente de documentos, auth, rate limiting y un pipeline de CI con 58 tests.",
+        "metaLeft": "Producto · FastAPI",
+        "metaRight": "2026"
+      },
+      {
+        "kicker": "IA · Accesibilidad",
+        "title": "Modelo de transcripción de lengua de signos",
+        "body": "Realicé fine-tuning de un modelo de transcripción de lengua de signos para una ONG en Argentina — trabajo temprano y práctico con modelos de visión y un impacto social real.",
+        "metaLeft": "ONG · Argentina",
+        "metaRight": "2023"
+      }
+    ]
+  },
+  "skills": {
+    "label": "§ 04 — Caja de Herramientas",
+    "headingPre": "Lo que uso",
+    "headingEm": "primero.",
+    "plainHeading": "Caja de Herramientas",
+    "note": "Una lectura honesta de dónde estoy hoy — calibrada por lo que toco más, no por lo que mejor se ve en papel.",
+    "columns": [
+      {
+        "title": "Afilado ahora",
+        "subtitle": "/ uso diario, últimos 12 meses",
+        "rows": [
+          { "name": "Sistemas Agénticos · MCP", "level": "Mi herramienta diaria", "bar": 95 },
+          { "name": "RAG · Evaluación de Retrieval", "level": "Desplegado y medido", "bar": 84 },
+          { "name": "LLM-as-Judge · Red-teaming", "level": "Práctica real", "bar": 80 },
+          { "name": "Python", "level": "Diario otra vez", "bar": 82 },
+          { "name": "TypeScript / JavaScript", "level": "Diario", "bar": 90 }
+        ]
+      },
+      {
+        "title": "Reciente y con confianza",
+        "subtitle": "/ últimos 1–3 años",
+        "rows": [
+          { "name": "Playwright · WDIO 9", "level": "Experto · era de QA lead", "bar": 94 },
+          { "name": "GitHub Actions · CI/CD", "level": "Semanal", "bar": 84 },
+          { "name": "Model Fine-tuning", "level": "Aplicado", "bar": 70 },
+          { "name": "SQL · Modelado de Datos", "level": "Sólido", "bar": 74 },
+          { "name": "API Testing", "level": "Cómodo", "bar": 72 }
+        ]
+      },
+      {
+        "title": "Fundacional",
+        "subtitle": "/ ya envié con esto, listo para retomar",
+        "rows": [
+          { "name": "GCP · Cloud Run", "level": "Desplegado hace poco", "bar": 65 },
+          { "name": "Java", "level": "Fundacional", "bar": 55 },
+          { "name": "Algoritmos y Estructuras de Datos", "level": "Nivel académico", "bar": 72 },
+          { "name": "Modelado ML · Análisis de Datos", "level": "Aplicado", "bar": 68 }
+        ]
+      },
+      {
+        "title": "Liderazgo y Forma de Trabajar",
+        "subtitle": "",
+        "rows": [
+          { "name": "Mentoría de ingenieros", "level": "5+ años", "bar": 90 },
+          { "name": "Gestión de stakeholders", "level": "Diario", "bar": 85 },
+          { "name": "Flujo async / remoto", "level": "Nativo", "bar": 95 },
+          { "name": "Contratación y entrevistas", "level": "Época Disney", "bar": 75 },
+          { "name": "Punto focal de framework QA", "level": "20+ SDETs activos", "bar": 88 }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "label": "§ 05 — Educación e Idiomas",
+    "headingPre": "Formalmente",
+    "headingEm": "curioso.",
+    "plainHeading": "Educación e Idiomas",
+    "degrees": [
+      {
+        "title": "Máster — Ciencia de Datos",
+        "school": "CEUPE",
+        "year": "2023",
+        "body": "Enfocado en análisis de datos y modelado ML — la base detrás del trabajo posterior en RAG en producción y fine-tuning."
+      },
+      {
+        "title": "Pregrado — Ingeniería de Sistemas",
+        "school": "Unisabaneta",
+        "year": "2018",
+        "body": "Fuerte en algoritmos — la columna vertebral del diseño de frameworks y los refactors de rendimiento."
+      }
+    ],
+    "languages": [
+      { "name": "Español", "level": "Nativo", "dots": 5, "half": false },
+      { "name": "English", "level": "Avanzado · C1", "dots": 4, "half": true }
+    ],
+    "hobbies": {
+      "label": "Fuera del teclado",
+      "value": "Baile · Música",
+      "dots": 4,
+      "half": false
+    }
+  },
+  "quote": {
+    "text": "Construyo sistemas de IA — y puedo probar que funcionan. Los evals, el red-teaming y la ingeniería de producción son el mismo trabajo.",
+    "who": "— Juan José"
+  }
+}

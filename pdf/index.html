@@ -118,7 +118,8 @@
 <script>
 (async () => {
   const params = new URLSearchParams(location.search);
-  const lang = (params.get('lang') === 'es') ? 'es' : 'en';
+  const KNOWN_VARIANTS = ['en', 'es', 'en-ai', 'es-ai'];
+  const lang = KNOWN_VARIANTS.includes(params.get('lang')) ? params.get('lang') : 'en';
 
   const res = await fetch('../content/' + lang + '.json');
   const data = await res.json();

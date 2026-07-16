@@ -6,6 +6,8 @@ on:
     paths-ignore:
       - 'cv-en.pdf'
       - 'cv-es.pdf'
+      - 'cv-en-ai.pdf'
+      - 'cv-es-ai.pdf'
   workflow_dispatch:
 
 permissions:
@@ -29,7 +31,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add cv-en.pdf cv-es.pdf
+          git add cv-en.pdf cv-es.pdf cv-en-ai.pdf cv-es-ai.pdf
           if git diff --cached --quiet; then
             echo "No PDF changes — skipping commit."
           else

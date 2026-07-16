@@ -755,7 +755,7 @@ async function setLang(lang){
   renderAll(data);
   document.getElementById('lang-en').classList.toggle('active', lang === 'en');
   document.getElementById('lang-es').classList.toggle('active', lang === 'es');
-  try { localStorage.setItem('cv.lang', lang); } catch(e) {}
+  try { if (lang === 'en' || lang === 'es') localStorage.setItem('cv.lang', lang); } catch(e) {}
   setupReveal();
 }
 
@@ -777,6 +777,8 @@ try {
   const saved = localStorage.getItem('cv.lang');
   if (saved === 'es' || saved === 'en') initial = saved;
 } catch(e) {}
+const urlLang = new URLSearchParams(location.search).get('lang');
+if (['en', 'es', 'en-ai', 'es-ai'].includes(urlLang)) initial = urlLang;
 setLang(initial);
 </script>
 

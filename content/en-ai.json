@@ -1,0 +1,257 @@
+{
+  "lang": "en",
+  "meta": {
+    "name": "Juan José Cano Duque",
+    "title": "AI Engineer · RAG, Agentic Systems & LLM Evals.",
+    "bio": "A decade of production software engineering, now pointed at AI systems: RAG shipped to production, agentic workflows as daily drivers, and evaluation harnesses that prove LLM systems actually work — before users find out they don't.",
+    "location": "Medellín · Remote",
+    "email": "jjcadu@gmail.com",
+    "linkedin": "https://linkedin.com/in/juan-jose-cano-duque",
+    "linkedinHandle": "/juan-jose-cano-duque",
+    "github": "https://github.com/mrjunos",
+    "githubHandle": "/mrjunos",
+    "availability": "Open to new opportunities — Available now · Global remote · EOR-friendly",
+    "portraitCaption": "Perito Moreno · Patagonia, AR"
+  },
+  "ui": {
+    "nav": {
+      "capabilities": "Capabilities",
+      "work": "Work",
+      "highlights": "Highlights",
+      "skills": "Skills",
+      "education": "Education"
+    },
+    "downloadPdf": "Download PDF",
+    "presentLabel": "Present",
+    "documentTitle": "Juan José Cano Duque — Curriculum Vitae"
+  },
+  "stats": [
+    { "value": "10", "unit": "+", "label": "Years building software" },
+    { "value": "5", "unit": "", "label": "Industries · Streaming, Aviation, Finance, Edu, AI" },
+    { "value": "3", "unit": "", "label": "Continents shipped to · NA, EU, LATAM" },
+    { "value": "2", "unit": "", "label": "Degrees · CS & Data Science" }
+  ],
+  "capabilities": {
+    "label": "§ 01 — AI Systems",
+    "headingPre": "Built for",
+    "headingEm": "production AI.",
+    "plainHeading": "Capabilities",
+    "items": [
+      {
+        "kicker": "RAG · Production",
+        "title": "RAG systems that survive production.",
+        "body": "End-to-end retrieval systems — chunking, retrieval optimization, document routing, guardrails. One is running in production today, serving university students."
+      },
+      {
+        "kicker": "Evals · Reliability",
+        "title": "Prove the LLM system actually works.",
+        "body": "Retrieval metrics with hard thresholds (recall, precision, MRR), LLM-as-judge calibrated against human labels, red-team suites for injection and exfiltration — deterministic in CI via record/replay."
+      },
+      {
+        "kicker": "Agentic · Orchestration",
+        "title": "Agents wired into real workflows.",
+        "body": "Multi-agent pipelines, tool use and MCP servers, memory strategies, hooks and internal CLIs — agentic primitives as daily drivers across the SDLC, not pilot decks."
+      }
+    ]
+  },
+  "work": {
+    "label": "§ 02 — Selected Work",
+    "headingPre": "A career, in",
+    "headingEm": "layers.",
+    "plainHeading": "Selected Work",
+    "items": [
+      {
+        "role": "Senior Test Automation Engineer",
+        "company": "Yuno",
+        "client": "Fintech · Hybrid · Colombia",
+        "period": "Dec 2025 — Mar 2026",
+        "bullets": [
+          "<b>AI-Augmented Development:</b> executed high-stakes workflows inside a demanding <b>agentic AI environment</b> serving the international financial industry.",
+          "<b>SDLC optimization via agents:</b> leveraged AI agents as the primary interface across the full software lifecycle — building, testing, debugging and rapid issue resolution.",
+          "<b>Feature delivery with agents:</b> shipped new product features by orchestrating AI agent tools to keep velocity and precision high in a complex landscape.",
+          "<b>Technical resilience:</b> thrived in a fast-paced, high-pressure setting, consistently meeting the rigorous <b>security and performance standards</b> of global fintech."
+        ],
+        "tags": ["Agentic AI", "Fintech", "SDLC Automation", "Agentic Tooling", "High-velocity QA"]
+      },
+      {
+        "role": "QA Automation Lead",
+        "company": "Globant",
+        "client": "British Airways",
+        "period": "2024 — 2025",
+        "bullets": [
+          "Already integrating <b>AI tooling</b> into engineering workflows before it became mainstream.",
+          "Designed and implemented a new <b>UI testing framework</b> for a complex, multi-team airline product.",
+          "Acted as <b>QA focal point</b>, leading integration and stakeholder relationships across multiple teams.",
+          "Improved integrations across <b>GitHub Actions, BrowserStack, WDIO 9</b> and internal libraries."
+        ],
+        "tags": ["AI Tooling", "WDIO 9", "TypeScript", "BrowserStack", "GitHub Actions"]
+      },
+      {
+        "role": "Senior Test Automation Engineer",
+        "company": "Globant",
+        "client": "Disney Streaming",
+        "period": "2023 — 2024",
+        "bullets": [
+          "Led the strategic <b>refactor of a metadata automation framework</b> — <b>+20%</b> faster execution, <b>+30%</b> faster test development.",
+          "Directed <b>QA best practices</b> rollout, increasing stakeholder confidence in the testing process.",
+          "Interviewed and onboarded engineers to grow the team."
+        ],
+        "tags": ["Spinnaker", "Java", "QA Strategy"]
+      },
+      {
+        "role": "Senior Test Automation Engineer",
+        "company": "Globant",
+        "client": "Deluxe Entertainment",
+        "period": "2019 — 2023",
+        "bullets": [
+          "Designed and executed automation strategies for a <b>cluster of critical APIs and UIs</b> using Python & Selenium.",
+          "Pioneered and led new automation projects with <b>Playwright</b>.",
+          "Mentored and onboarded <b>Junior Automation Engineers</b>."
+        ],
+        "tags": ["Python", "Selenium", "Playwright", "Mentorship"]
+      },
+      {
+        "role": "Java Developer · Team Lead",
+        "company": "H.M Solutions",
+        "client": "",
+        "period": "2017 — 2019",
+        "bullets": [
+          "Led a small team building a <b>full ERP suite</b> — digital invoicing, inventory, purchases, sales and payroll — in Java."
+        ],
+        "tags": ["Java", "Team Lead", "ERP"]
+      },
+      {
+        "role": "Web Developer",
+        "company": "Ingenisoft",
+        "client": "",
+        "period": "2014 — 2016",
+        "bullets": [
+          "Built a municipal <b>public lighting management system</b> using PHP and the Google GPS API."
+        ],
+        "tags": ["PHP", "Google Maps API"]
+      }
+    ]
+  },
+  "highlights": {
+    "label": "§ 03 — Selected AI Work",
+    "headingPre": "Things I'm",
+    "headingEm": "proud of.",
+    "plainHeading": "Selected AI Work",
+    "items": [
+      {
+        "kicker": "Evals · Open Source",
+        "title": "LLM evaluation harness",
+        "body": "Three-layer eval strategy for RAG systems: retrieval metrics with hard thresholds, an LLM judge calibrated to <b>100% agreement with human labels</b>, and an adversarial red-team suite (12/12) — all deterministic in CI via record/replay. Public: github.com/mrjunos/llm-eval-harness",
+        "metaLeft": "Open source · Python",
+        "metaRight": "2026"
+      },
+      {
+        "kicker": "AI · Production",
+        "title": "Student-facing RAG chatbot",
+        "body": "Built and shipped a RAG system currently running in production as a student-facing chatbot for a university in Colombia.",
+        "metaLeft": "University · Colombia",
+        "metaRight": "2024"
+      },
+      {
+        "kicker": "AI · Product",
+        "title": "Compass — RAG document assistant",
+        "body": "Self-hosted RAG product built end to end: FastAPI backend, reasoning-based retrieval (PageIndex), smart document routing, auth, rate limiting and a 58-test CI pipeline.",
+        "metaLeft": "Product · FastAPI",
+        "metaRight": "2026"
+      },
+      {
+        "kicker": "AI · Accessibility",
+        "title": "Sign-language transcription model",
+        "body": "Fine-tuned a sign-language transcription model for an NGO in Argentina — early hands-on work with vision models for real-world social impact.",
+        "metaLeft": "NGO · Argentina",
+        "metaRight": "2023"
+      }
+    ]
+  },
+  "skills": {
+    "label": "§ 04 — Toolkit",
+    "headingPre": "What I reach for",
+    "headingEm": "first.",
+    "plainHeading": "Toolkit",
+    "note": "Honest read on where I am today — calibrated by what I touch most, not by what looks best on paper.",
+    "columns": [
+      {
+        "title": "Currently Sharp",
+        "subtitle": "/ daily, last 12 months",
+        "rows": [
+          { "name": "Agentic AI Systems · MCP", "level": "Daily Driver", "bar": 95 },
+          { "name": "RAG · Retrieval Evaluation", "level": "Shipped & measured", "bar": 84 },
+          { "name": "LLM-as-Judge · Red-teaming", "level": "Hands-on", "bar": 80 },
+          { "name": "Python", "level": "Daily again", "bar": 82 },
+          { "name": "TypeScript / JavaScript", "level": "Daily", "bar": 90 }
+        ]
+      },
+      {
+        "title": "Recent & Confident",
+        "subtitle": "/ last 1–3 years",
+        "rows": [
+          { "name": "Playwright · WDIO 9", "level": "Expert · QA lead era", "bar": 94 },
+          { "name": "GitHub Actions · CI/CD", "level": "Weekly", "bar": 84 },
+          { "name": "Model Fine-tuning", "level": "Applied", "bar": 70 },
+          { "name": "SQL · Data Modeling", "level": "Solid", "bar": 74 },
+          { "name": "API Testing", "level": "Comfortable", "bar": 72 }
+        ]
+      },
+      {
+        "title": "Foundational",
+        "subtitle": "/ shipped with, will ramp",
+        "rows": [
+          { "name": "GCP · Cloud Run", "level": "Shipped recently", "bar": 65 },
+          { "name": "Java", "level": "Foundational", "bar": 55 },
+          { "name": "Algorithms & Data Structures", "level": "Degree-grade", "bar": 72 },
+          { "name": "ML Modeling · Data Analysis", "level": "Applied", "bar": 68 }
+        ]
+      },
+      {
+        "title": "Leadership & Way of Working",
+        "subtitle": "",
+        "rows": [
+          { "name": "Mentoring engineers", "level": "5+ yrs", "bar": 90 },
+          { "name": "Stakeholder management", "level": "Daily", "bar": 85 },
+          { "name": "Async / remote workflow", "level": "Native", "bar": 95 },
+          { "name": "Hiring & interviewing", "level": "Disney era", "bar": 75 },
+          { "name": "QA framework focal point", "level": "20+ active SDETs", "bar": 88 }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "label": "§ 05 — Education & Languages",
+    "headingPre": "Formally",
+    "headingEm": "curious.",
+    "plainHeading": "Education & Languages",
+    "degrees": [
+      {
+        "title": "Master — Data Science",
+        "school": "CEUPE",
+        "year": "2023",
+        "body": "Focused on data analysis & ML modeling — the foundation behind production RAG and fine-tuning work that followed."
+      },
+      {
+        "title": "Bachelor's Degree — Computer Science",
+        "school": "Unisabaneta",
+        "year": "2018",
+        "body": "Strength in algorithms — the backbone behind framework design and performance refactors."
+      }
+    ],
+    "languages": [
+      { "name": "Español", "level": "Native", "dots": 5, "half": false },
+      { "name": "English", "level": "Advanced · C1", "dots": 4, "half": true }
+    ],
+    "hobbies": {
+      "label": "Off-keyboard",
+      "value": "Dance · Music",
+      "dots": 4,
+      "half": false
+    }
+  },
+  "quote": {
+    "text": "I build AI systems — and I can prove they work. Evals, red-teaming and production engineering are the same job.",
+    "who": "— Juan José"
+  }
+}
